@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*@media only screen and (max-width: 767px) {}*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F9F5EA;
+    padding: 0px;
+    margin-top: 0px;
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Stint Ultra Condensed', cursive;
+    font-weight: 500;
+    color: #af9a7c;
+    padding: 15px;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: #F9F5EA;
+}
+
+h3,
+h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #A23607;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: #4E2008;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.logo {
+    padding: 10px 10px;
+    width: 8%;
+    height: 8%;
+    float: left;
+}
+
+header {
+    text-align: center;
+    background-color: #4E2008;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    top: 0;
+}
+
+.menu ul li {
+    font-family: 'Abhaya Libre', sans-serif;
+    display: inline-block;
+    text-align: left;
+    padding: 10px 7px;
+    margin-top: 10px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.menu ul li:hover {
+    background-color: #af9a7c;
+    cursor: pointer;
+}
+
+#home {
+    background-image: url();
+}
+
+#productos {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 50% 2fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.productos.div {
+    background: white;
+}
+
+.productos.div:hover {
+    border: 2px white;
+}
+
+#servicios {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 45% 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+}
+
+#contacto {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1em;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+}
+
+footer {
+    width: 100%;
+    height: 5%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    background-color: #4E2008;
+    padding: 20px;
+    justify-content: left;
+}
+
+.footerTexto {
+    text-align: left;
+}
+
+.redesFooter img {
+    position: relative;
+    top: 0;
+    left: 72%;
+    width: 2%;
+    height: 2%;
+    justify-content: flex-end;
+}
