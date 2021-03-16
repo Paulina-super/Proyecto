@@ -135,7 +135,7 @@ header {
 }
 
 footer {
-    justify-items: stretch;
+    justify-items: end;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-column-gap: 5px;
@@ -157,10 +157,9 @@ footer {
     color: #F9F5EA;
 }
 
-.redesFooter nav img {
-    width: 4.5%;
-    height: 4.5%;
-    margin: 10px;
+.redesFooter nav a img {
+    width: 5%;
+    height: 5%;
 }
 
 
