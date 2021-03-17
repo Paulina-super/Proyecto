@@ -98,7 +98,7 @@ header {
 #home video {
     top: 150px;
     width: 100%;
-    height: 95vh;
+    height: 100vh;
 }
 
 #productos {
@@ -111,12 +111,25 @@ header {
     grid-row-gap: 100px;
 }
 
+#productos img {
+    width: 110%;
+    height: 110%;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
+    -moz-box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
+    box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
+}
+
+#productos img:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease-in-out;
+}
+
 #servicios {
     padding: 120px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 45% 1fr;
-    grid-area: ;
     grid-row-gap: 5px;
     font-family: 'Roboto Mono', monospace;
     font-weight: 100;
@@ -124,7 +137,7 @@ header {
 
 #servicios img {
     width: 100%;
-    height: 95%;
+    height: 100%;
 }
 
 #contacto {
@@ -135,21 +148,25 @@ header {
     font-weight: 100;
 }
 
+#contacto img {
+    width: 100%;
+    height: 95%;
+}
+
 footer {
-    justify-items: end;
+    justify-items: start;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-column-gap: 5px;
-    background-color: #4E2008;
+    background-image: linear-gradient(to right, #4E2008, #af9a7c);
     width: 100%;
     height: 8%;
-    position: fixed;
     bottom: 0;
 }
 
 .texto ul {
     list-style: none;
-    margin: 2px;
+    margin: 1px;
 }
 
 .texto ul li {
@@ -161,6 +178,7 @@ footer {
 .redesFooter nav a img {
     width: 5%;
     height: 5%;
+    margin: 10px;
 }
 
 
