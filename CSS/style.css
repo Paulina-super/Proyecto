@@ -156,10 +156,10 @@ header {
 footer {
     justify-items: start;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 5px;
+    grid-template-columns: 90% 10%;
+    grid-column-gap: 1px;
     background-image: linear-gradient(to right, #4E2008, #af9a7c);
-    width: 100%;
+    width: 110%;
     height: 8%;
     bottom: 0;
 }
@@ -176,9 +176,9 @@ footer {
 }
 
 .redesFooter nav a img {
-    width: 5%;
-    height: 5%;
-    margin: 10px;
+    width: 25%;
+    height: 25%;
+    margin: 10px 5px;
 }
 
 
