@@ -168,7 +168,7 @@ header {
     display: grid;
     grid-template-areas: "titulo1 titulo1" "catering textoc" "textod desayunos";
     grid-template-columns: 50% 50%;
-    grid-template-rows: 45% 1fr;
+    grid-template-rows: auto 1fr;
     grid-row-gap: 5px;
     font-family: 'Roboto Mono', monospace;
     font-weight: 100;
@@ -196,7 +196,7 @@ header {
 
 #servicios img {
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
 #contacto {
