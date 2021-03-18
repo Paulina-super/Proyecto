@@ -33,6 +33,9 @@ h2 {
 }
 
 h3 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
     background-color: #4E2008;
     color: #F9F5EA;
 }
@@ -107,15 +110,43 @@ header {
 }
 
 #productos {
-    padding: 120px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
     display: grid;
     grid-template-areas: "titulo titulo titulo" "imagen1 imagen2 imagen3" "texto1 texto2 texto3";
     grid-template-columns: 25% 25% 25%;
-    grid-template-rows: 10% 1fr 50% 1fr;
+    grid-template-rows: 10% auto 40%;
     grid-column-gap: 100px;
-    grid-row-gap: 100px;
+    grid-row-gap: 50px;
     justify-content: center;
+}
+
+.titulo {
+    grid-area: titulo;
+}
+
+.imagen1 {
+    grid-area: imagen1;
+}
+
+.imagen2 {
+    grid-area: imagen2;
+}
+
+.imagen3 {
+    grid-area: imagen3;
+}
+
+.texto1 {
+    grid-area: texto1;
+}
+
+.texto2 {
+    grid-area: texto2;
+}
+
+.texto3 {
+    grid-area: texto3;
 }
 
 #productos img {
@@ -135,11 +166,32 @@ header {
 #servicios {
     padding: 10px;
     display: grid;
+    grid-template-areas: "titulo1 titulo1" "catering textoc" "textod desayunos";
     grid-template-columns: 50% 50%;
     grid-template-rows: 45% 1fr;
     grid-row-gap: 5px;
     font-family: 'Roboto Mono', monospace;
     font-weight: 100;
+}
+
+.titulo1 {
+    grid-area: titulo1;
+}
+
+.catering {
+    grid-area: catering;
+}
+
+.textoc {
+    grid-area: textoc;
+}
+
+.textod {
+    grid-area: textod;
+}
+
+.desayunos {
+    grid-area: desayunos;
 }
 
 #servicios img {
