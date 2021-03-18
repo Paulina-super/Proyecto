@@ -32,9 +32,12 @@ h2 {
     color: #F9F5EA;
 }
 
-h3,
+h3 {
+    background-color: #4E2008;
+    color: #F9F5EA;
+}
+
 h4 {
-    text-align: center;
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -63,7 +66,7 @@ header {
     text-align: center;
     background-color: #4E2008;
     width: 100%;
-    height: 120px;
+    height: 12%;
     position: fixed;
     top: 0;
     z-index: 1;
@@ -107,8 +110,9 @@ header {
     padding: 120px;
     margin: 20px;
     display: grid;
+    grid-template-areas: "titulo titulo titulo" "imagen1 imagen2 imagen3" "texto1 texto2 texto3";
     grid-template-columns: 25% 25% 25%;
-    grid-template-rows: 50%1fr;
+    grid-template-rows: 10% 1fr 50% 1fr;
     grid-column-gap: 100px;
     grid-row-gap: 100px;
     justify-content: center;
@@ -129,7 +133,7 @@ header {
 }
 
 #servicios {
-    padding: 120px;
+    padding: 10px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 45% 1fr;
@@ -154,6 +158,7 @@ header {
 #contacto img {
     width: 100%;
     height: 95%;
+    justify-content: start;
 }
 
 footer {
