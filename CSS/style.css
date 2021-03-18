@@ -34,6 +34,8 @@ h2 {
 
 h3,
 h4 {
+    text-align: center;
+    text-transform: uppercase;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     color: #A23607;
@@ -76,7 +78,7 @@ header {
 
 #menu ul {
     list-style: none;
-    margin: 5px;
+    margin: 2px;
 }
 
 #menu ul li {
@@ -109,6 +111,7 @@ header {
     grid-template-rows: 50%1fr;
     grid-column-gap: 100px;
     grid-row-gap: 100px;
+    justify-content: center;
 }
 
 #productos img {
