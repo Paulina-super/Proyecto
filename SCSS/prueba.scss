@@ -1,0 +1,11 @@
+$colortexto:#A23607;
+$font-family:'Roboto',
+sans-serif;
+body {
+    background-color: red;
+}
+
+p {
+    color: $colortexto;
+    font-family: $font-family;
+}
