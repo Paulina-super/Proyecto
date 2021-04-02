@@ -135,7 +135,7 @@ body {
                 -moz-box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
                 box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
             }
-            .fotos img:hover {
+            &:hover {
                 transform: scale(1.05);
                 transition: transform 0.5s ease-in-out;
             }
@@ -201,29 +201,6 @@ body {
             margin: 10px 5px;
         }
     }
-    footer {
-        display: grid;
-        grid-template-columns: 90% 10%;
-        grid-column-gap: 1px;
-        background-image: linear-gradient(to right, #4E2008, #af9a7c);
-        width: 100%;
-        height: 70px;
-        bottom: 0;
-        .footer__lista {
-            list-style: none;
-            margin: 1px;
-            .footer__lista--item {
-                text-decoration: none;
-                padding: 2px;
-                color: #F9F5EA;
-            }
-        }
-        .redes__link--imagen {
-            width: 25%;
-            height: 25%;
-            margin: 10px 5px;
-        }
-    }
 }
 
 
@@ -247,3 +224,30 @@ guardarrrrrr
     background-color: #af9a7c;
     cursor: pointer;
 }*/
+
+body {
+    @if $colorebloque==#d3c1a9 {
+        color: #A23607;
+    }
+    @else if $colorebloque==#4E2008 {
+        color: #F9F5EA;
+    }
+    @else {
+        color: #af9a7c;
+    }
+}
+
+$animaciones:(imagen1:#4E2008, imagen2:#A23607, imagen3:#af9a7c, );
+@for $i from 1 to 3 {
+    $animaciones-#{$i} {
+        box-shadow: 10% + $i;
+    }
+}
+
+@each $animaciones in imagen1,
+imagen2,
+imagen3 {
+    img.#{productos} {
+        width: 10%;
+    }
+}
