@@ -239,7 +239,7 @@ body {
 
 $animaciones:(imagen1:#4E2008, imagen2:#A23607, imagen3:#af9a7c, );
 @for $i from 1 to 3 {
-    $animaciones-#{$i} {
+    #productos-#{$i} {
         box-shadow: 10% + $i;
     }
 }
