@@ -61,7 +61,7 @@ section {
 body {
     background-color: #F9F5EA;
     overflow-x: hidden;
-    .row {
+    
         .header {
             background-color: #4E2008;
             width: 100%;
@@ -167,11 +167,11 @@ body {
         .desayunos {
             grid-area: desayunos;
         }
-        #servicios img {
+        .servicios img {
             padding: 5px;
             max-width: 95%;
         }
-        #contacto {
+        .contacto {
             position: relative;
             display: grid;
             grid-template-columns: 50% 50%;
@@ -202,7 +202,7 @@ body {
             height: 25%;
             margin: 10px 5px;
         }
-    }
+    
 }
 
 
@@ -227,7 +227,7 @@ guardarrrrrr
     cursor: pointer;
 }*/
 
-body {
+/*body {
     @if $colorebloque==#d3c1a9 {
         color: #A23607;
     }
@@ -252,4 +252,4 @@ imagen3 {
     img.#{productos} {
         width: 10%;
     }
-}
+}*/
