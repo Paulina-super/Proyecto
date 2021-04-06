@@ -1,9 +1,7 @@
-$hfcolor:#4E2008;
 $colortexto:#A23607;
-$colorebloque:#af9a7c;
-$bgcolor:#F9F5EA;
 $ftexto:'Roboto',
 sans-serif;
+$colorebloque:#af9a7c;
 * {
     margin: 0;
     padding: 0;
@@ -99,7 +97,7 @@ body {
                 max-width: 100%;
                 height: 100vh;
             }
-            .productos {
+            #productos {
                 display: grid;
                 grid-template-areas: "titulo titulo titulo" "imagen1 imagen2 imagen3" "texto1 texto2 texto3";
                 grid-template-columns: 25% 25% 25%;
