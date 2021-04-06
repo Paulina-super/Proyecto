@@ -1,7 +1,7 @@
-$color1:#4E2008;
-$color2:#A23607;
-$color3:#af9a7c;
-$color4:#F9F5EA;
+$hfcolor:#4E2008;
+$colortexto:#A23607;
+$colorebloque:#af9a7c;
+$bgcolor:#F9F5EA;
 $ftexto:'Roboto',
 sans-serif;
 * {
@@ -19,7 +19,7 @@ h1 {
     text-align: center;
     font-family: 'Stint Ultra Condensed', cursive;
     font-weight: 500;
-    color: $colorebloque;
+    color: #af9a7c;
     padding: 1px;
 }
 
