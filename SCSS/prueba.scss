@@ -1,7 +1,9 @@
-$colortexto:#A23607;
+$color1:#4E2008;
+$color2:#A23607;
+$color3:#af9a7c;
+$color4:#F9F5EA;
 $ftexto:'Roboto',
 sans-serif;
-$colorebloque:#af9a7c;
 * {
     margin: 0;
     padding: 0;
@@ -13,61 +15,60 @@ html {
 }
 
 h1 {
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Stint Ultra Condensed', cursive;
-    font-weight: 500;
-    color: #af9a7c;
+    font-family: 'Cinzel', serif;
+    color: $color3;
     padding: 1px;
 }
+
 h2 {
     font-family: 'Lato', sans-serif;
-    text-align: center;
-    color: #F9F5EA;
+    font-weight: 100;
+    color: $color4;
 }
 
 h3 {
     text-transform: uppercase;
     text-align: center;
     font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    background-color: #4E2008;
+    font-weight: 100;
+    background-color: $color1;
     width: 100%;
-    color: #F9F5EA;
+    color: $color4;
 }
 
 h4 {
-    text-align:center;
+    text-align: center;
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
-    color: #A23607;
+    color: $color2;
 }
 
 p {
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 900;
-    color: #A23607;
+    color: $color2;
 }
 
-section {
+
+/*section {
     height: 100vh;
     padding: 10px;
     margin: 10px;
-}
+}*/
 
 body {
-    background-color: #F9F5EA;
+    background-color: $color4;
     overflow-x: hidden;
     .row {
         .header {
-            background-color: #4E2008;
+            background-color: $color1;
             width: 100%;
             height: 15%;
             position: fixed;
             top: 0;
-            z-index: 2;
+            z-index: 1;
             &__logo {
                 padding: 5px 5px;
                 width: 6%;
@@ -80,24 +81,21 @@ body {
                 a {
                     border: none;
                     font-family: 'Abhaya Libre', sans-serif;
-                    color: #F9F5EA;
-                    background-color: #4E2008;
+                    color: $color4;
+                    background-color: $color1;
                 }
                 a:hover {
-                    background-color: $colorebloque;
+                    background-color: $color3;
                     cursor: pointer;
                 }
             }
             .btn btn-primary {
                 font-family: 'Abhaya Libre', sans-serif;
-                color: #F9F5EA;
+                color: $color4;
             }
         }
         main {
-            #home video {
-                max-width: 100%;
-                height: 100vh;
-            }
+            #home video {}
             #productos {
                 display: grid;
                 grid-template-areas: "titulo titulo titulo" "imagen1 imagen2 imagen3" "texto1 texto2 texto3";
@@ -142,7 +140,7 @@ body {
             }
         }
         .contServ {
-            padding: 10px; 
+            padding: 10px;
             display: grid;
             grid-template-areas: "titulo1 titulo1" "catering textoc" "textod desayunos";
             grid-template-columns: 50% 50%;
@@ -183,22 +181,21 @@ body {
         display: grid;
         grid-template-columns: 90% 10%;
         grid-column-gap: 1px;
-        background-image: linear-gradient(to right, #4E2008, #af9a7c);
+        background-color: $color1;
         width: 100%;
-        height: 70px;
+        height: 60px;
         bottom: 0;
         .footer__lista {
             list-style: none;
             margin: 1px;
             .footer__lista--item {
                 text-decoration: none;
-                padding: 2px;
-                color: #F9F5EA;
+                color: $color4;
             }
         }
         .redes__link--imagen {
-            width: 25%;
-            height: 25%;
+            width: 15%;
+            height: 15%;
             margin: 10px 5px;
         }
     }
@@ -227,10 +224,10 @@ guardarrrrrr
 }*/
 
 body {
-    @if $colorebloque==#d3c1a9 {
-        color: #A23607;
+    @if $color3==#d3c1a9 {
+        color: $color2;
     }
-    @else if $colorebloque==#4E2008 {
+    @else if $color3==#4E2008 {
         color: #F9F5EA;
     }
     @else {
