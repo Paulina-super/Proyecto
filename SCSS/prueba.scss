@@ -17,6 +17,7 @@ html {
 h1 {
     text-align: center;
     font-family: 'Cinzel', serif;
+    font-size: 2rem;
     color: $color3;
 }
 
@@ -112,15 +113,29 @@ body {
             .home__titulo {
                 display: block;
                 z-index: 1;
+                margin-bottom: 0;
                 text-align: center;
-                padding: 2rem;
+                padding-bottom: 2rem;
             }
-            .home__menu {
-                display: block;
-                max-width: 30rem;
-                padding: 1rem;
-                margin: auto;
-                text-align: center;
+        }
+        .menu {
+            z-index: 2;
+            display: flex;
+            padding: 1rem 2rem;
+            margin: 1rem;
+            text-align: center;
+            .btn {
+                background-color: $color1;
+            }
+            .dropdown-menu {
+                background-color: $color1;
+                a {
+                    color: $color4;
+                }
+                a:hover {
+                    background-color: $color3;
+                    cursor: pointer;
+                }
             }
         }
         #productos {
