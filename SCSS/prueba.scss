@@ -1,208 +1,231 @@
-$color1:#4E2008;
-$color2:#A23607;
-$color3:#af9a7c;
-$color4:#F9F5EA;
-$ftexto:'Roboto',
-sans-serif;
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-h1 {
-    font-family: 'Cinzel', serif;
-    color: $color3;
-    padding: 1px;
-}
-
-h2 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    color: $color4;
-}
-
-h3 {
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    background-color: $color1;
-    width: 100%;
-    color: $color4;
-}
-
-h4 {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    color: $color2;
-}
-
-p {
-    text-align: center;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 900;
-    color: $color2;
-}
-
-
-/*section {
+    $color1:#4E2008;
+    $color2:#A23607;
+    $color3:#af9a7c;
+    $color4:#F9F5EA;
+    $ftexto:'Roboto',
+    sans-serif;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    h1 {
+        font-family: 'Cinzel', serif;
+        color: $color3;
+    }
+    
+    h2 {
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        color: $color4;
+    }
+    
+    h3 {
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        background-color: $color1;
+        color: $color4;
+    }
+    
+    h4 {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Lato', sans-serif;
+        font-size: 2rem;
+        color: $color2;
+    }
+    
+    p {
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        color: $color2;
+    }
+    /*section {
     height: 100vh;
     padding: 10px;
     margin: 10px;
 }*/
-
-body {
-    background-color: $color4;
-    overflow-x: hidden;
-    .row {
-        .header {
-            background-color: $color1;
-            width: 100%;
-            height: 15%;
-            position: fixed;
-            top: 0;
-            z-index: 1;
-            &__logo {
-                padding: 5px 5px;
-                width: 6%;
-                float: left;
-            }
-            .btn-group {
-                width: 50%;
-                position: absolute;
-                margin-left: 45%;
-                a {
-                    border: none;
+    
+    body {
+        background-color: $color4;
+        overflow-x: hidden;
+        .row {
+            header {
+                background-color: $color1;
+                width: 100%;
+                height: 15%;
+                position: fixed;
+                top: 0;
+                z-index: 1;
+                .menu_logo {
+                    padding: 5px 5px;
+                    margin: 10px;
+                    width: 6%;
+                    float: left;
+                }
+                .btn-group {
+                    width: 50%;
+                    position: absolute;
+                    margin-left: 45%;
+                    a {
+                        border: none;
+                        font-family: 'Abhaya Libre', sans-serif;
+                        color: $color4;
+                        background-color: $color1;
+                    }
+                    a:hover {
+                        background-color: $color3;
+                        cursor: pointer;
+                    }
+                }
+                .btn btn-primary {
                     font-family: 'Abhaya Libre', sans-serif;
                     color: $color4;
-                    background-color: $color1;
-                }
-                a:hover {
-                    background-color: $color3;
-                    cursor: pointer;
                 }
             }
-            .btn btn-primary {
-                font-family: 'Abhaya Libre', sans-serif;
-                color: $color4;
+            main {
+                .home {
+                    height: 100vh;
+                    display: flex;
+                    align-items: center;
+                    .home__video {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100vh;
+                        &__video {
+                            min-width: 100%;
+                            min-height: 100%;
+                        }
+                    }
+                    .home__titulo {
+                        display: block;
+                        z-index: 1;
+                        text-align: center;
+                        padding: 2rem;
+                    }
+                    .home__menu {
+                        display: block;
+                        max-width: 30rem;
+                        padding: 1rem;
+                        margin: auto;
+                        text-align: center;
+                    }
+                }
+                #productos {
+                    display: grid;
+                    grid-template-areas: "titulo titulo titulo" "imagen1 imagen2 imagen3" "texto1 texto2 texto3";
+                    grid-template-columns: 25% 25% 25%;
+                    grid-template-rows: 10% auto 40%;
+                    grid-column-gap: 50px;
+                    grid-row-gap: 50px;
+                    justify-content: center;
+                    text-align: center;
+                }
+                .titulo {
+                    grid-area: titulo;
+                }
+                .imagen1 {
+                    grid-area: imagen1;
+                }
+                .imagen2 {
+                    grid-area: imagen2;
+                }
+                .imagen3 {
+                    grid-area: imagen3;
+                }
+                .texto1 {
+                    grid-area: texto1;
+                }
+                .texto2 {
+                    grid-area: texto2;
+                }
+                .texto3 {
+                    grid-area: texto3;
+                }
+                .fotos {
+                    max-width: 100%;
+                    border-radius: 10px 10px 10px 10px;
+                    -webkit-box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
+                    -moz-box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
+                    box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
+                }
+                .fotos:hover {
+                    transform: scale(1.05);
+                    transition: transform 0.5s ease-in-out;
+                }
             }
-        }
-        main {
-            #home video {}
-            #productos {
+            .contServ {
+                padding: 10px;
                 display: grid;
-                grid-template-areas: "titulo titulo titulo" "imagen1 imagen2 imagen3" "texto1 texto2 texto3";
-                grid-template-columns: 25% 25% 25%;
-                grid-template-rows: 10% auto 40%;
-                grid-column-gap: 50px;
-                grid-row-gap: 50px;
-                justify-content: center;
-                text-align: center;
+                grid-template-areas: "titulo1 titulo1" "catering textoc" "textod desayunos";
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 5% 45% 1fr 45%;
+                grid-row-gap: 2px;
+                font-family: 'Roboto Mono', monospace;
+                font-weight: 100;
             }
-            .titulo {
-                grid-area: titulo;
+            .titulo1 {
+                grid-area: titulo1;
             }
-            .imagen1 {
-                grid-area: imagen1;
+            .catering {
+                grid-area: catering;
             }
-            .imagen2 {
-                grid-area: imagen2;
+            .textoc {
+                grid-area: textoc;
             }
-            .imagen3 {
-                grid-area: imagen3;
+            .textod {
+                grid-area: textod;
             }
-            .texto1 {
-                grid-area: texto1;
+            .desayunos {
+                grid-area: desayunos;
             }
-            .texto2 {
-                grid-area: texto2;
+            #servicios img {
+                padding: 5px;
+                max-width: 95%;
             }
-            .texto3 {
-                grid-area: texto3;
-            }
-            .fotos {
-                max-width: 100%;
-                border-radius: 10px 10px 10px 10px;
-                -webkit-box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
-                -moz-box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
-                box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
-            }
-            .fotos:hover {
-                transform: scale(1.05);
-                transition: transform 0.5s ease-in-out;
+            #contacto {
+                position: relative;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                gap: 1em;
+                font-family: 'Roboto Mono', monospace;
+                font-weight: 100;
             }
         }
-        .contServ {
-            padding: 10px;
+        footer {
             display: grid;
-            grid-template-areas: "titulo1 titulo1" "catering textoc" "textod desayunos";
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 5% 45% 1fr 45%;
-            grid-row-gap: 2px;
-            font-family: 'Roboto Mono', monospace;
-            font-weight: 100;
-        }
-        .titulo1 {
-            grid-area: titulo1;
-        }
-        .catering {
-            grid-area: catering;
-        }
-        .textoc {
-            grid-area: textoc;
-        }
-        .textod {
-            grid-area: textod;
-        }
-        .desayunos {
-            grid-area: desayunos;
-        }
-        #servicios img {
-            padding: 5px;
-            max-width: 95%;
-        }
-        #contacto {
-            position: relative;
-            display: grid;
-            grid-template-columns: 50% 50%;
-            gap: 1em;
-            font-family: 'Roboto Mono', monospace;
-            font-weight: 100;
+            grid-template-columns: 90% 10%;
+            grid-column-gap: 1px;
+            background-color: $color1;
+            width: 100%;
+            height: 60px;
+            bottom: 0;
+            .footer__lista {
+                list-style: none;
+                margin: 1px;
+                .footer__lista--item {
+                    text-decoration: none;
+                    font-size: 2rem;
+                    color: $color4;
+                }
+            }
+            .redes__link--imagen {
+                width: 15%;
+                height: 15%;
+                margin: 10px 5px;
+            }
         }
     }
-    footer {
-        display: grid;
-        grid-template-columns: 90% 10%;
-        grid-column-gap: 1px;
-        background-color: $color1;
-        width: 100%;
-        height: 60px;
-        bottom: 0;
-        .footer__lista {
-            list-style: none;
-            margin: 1px;
-            .footer__lista--item {
-                text-decoration: none;
-                color: $color4;
-            }
-        }
-        .redes__link--imagen {
-            width: 15%;
-            height: 15%;
-            margin: 10px 5px;
-        }
-    }
-}
-
-
-/*#menu ul {
+    /*#menu ul {
     list-style: none;
     margin: 2px;
 }
@@ -222,30 +245,30 @@ guardarrrrrr
     background-color: #af9a7c;
     cursor: pointer;
 }*/
-
-body {
-    @if $color3==#d3c1a9 {
-        color: $color2;
+    
+    body {
+        @if $color3==#d3c1a9 {
+            color: $color2;
+        }
+        @else if $color3==#4E2008 {
+            color: #F9F5EA;
+        }
+        @else {
+            color: #af9a7c;
+        }
     }
-    @else if $color3==#4E2008 {
-        color: #F9F5EA;
+    
+    $animaciones:(imagen1:#4E2008, imagen2:#A23607, imagen3:#af9a7c, );
+    @for $i from 1 to 3 {
+        #productos-#{$i} {
+            box-shadow: 10% + $i;
+        }
     }
-    @else {
-        color: #af9a7c;
+    
+    @each $animaciones in imagen1,
+    imagen2,
+    imagen3 {
+        img.#{productos} {
+            width: 10%;
+        }
     }
-}
-
-$animaciones:(imagen1:#4E2008, imagen2:#A23607, imagen3:#af9a7c, );
-@for $i from 1 to 3 {
-    #productos-#{$i} {
-        box-shadow: 10% + $i;
-    }
-}
-
-@each $animaciones in imagen1,
-imagen2,
-imagen3 {
-    img.#{productos} {
-        width: 10%;
-    }
-}
