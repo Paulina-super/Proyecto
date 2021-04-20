@@ -34,7 +34,15 @@ h4 {
   text-align: center;
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
-  font-size: 2rem;
+  font-size: 1rem;
+  color: #A23607;
+}
+
+h5 {
+  text-align: left;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
   color: #A23607;
 }
 
@@ -51,41 +59,45 @@ body {
 
 body header {
   background-color: #4E2008;
-  width: 100%;
+  width: 100vw;
   height: 10%;
   position: fixed;
   top: 0;
   z-index: 1;
-  /*.btn-group {
-            width: 50%;
-            position: absolute;
-            margin-left: 45%;
-            a {
-                border: none;
-                font-family: 'Abhaya Libre', sans-serif;
-                color: $color4;
-                background-color: $color1;
-            }
-            a:hover {
-                background-color: $color3;
-                cursor: pointer;
-            }
-        }
-        .btn btn-primary {
-            font-family: 'Abhaya Libre', sans-serif;
-            color: $color4;
-        }*/
 }
 
 body header .header__logo {
-  padding: 5px 5px;
+  padding: 5px;
   margin: 10px;
   width: 4%;
   float: left;
 }
 
-body main {
-  padding: 5%;
+body header .menu {
+  z-index: 2;
+  display: flex;
+  text-align: center;
+}
+
+body header .menu .btn {
+  background-color: #4E2008;
+}
+
+body header .menu .dropdown-menu {
+  background-color: #4E2008;
+}
+
+body header .menu .dropdown-menu a {
+  color: #F9F5EA;
+}
+
+body header .menu .dropdown-menu a:hover {
+  background-color: #af9a7c;
+  cursor: pointer;
+}
+
+body main section {
+  margin: 9%;
 }
 
 body main .home {
@@ -101,40 +113,15 @@ body main .home .home__video {
   height: 100vh;
 }
 
-body main .home .home__video__video {
+body main .home .home__video .home__video video {
   min-width: 100%;
   min-height: 100%;
 }
 
 body main .home .home__titulo {
-  display: block;
+  margin: 10% 30%;
   z-index: 1;
-  margin-bottom: 0;
   text-align: center;
-  padding-bottom: 2rem;
-}
-
-body main .menu {
-  z-index: 5;
-  display: flex;
-  text-align: center;
-}
-
-body main .menu .btn {
-  background-color: #4E2008;
-}
-
-body main .menu .dropdown-menu {
-  background-color: #4E2008;
-}
-
-body main .menu .dropdown-menu a {
-  color: #F9F5EA;
-}
-
-body main .menu .dropdown-menu a:hover {
-  background-color: #af9a7c;
-  cursor: pointer;
 }
 
 body main #productos {
@@ -187,7 +174,7 @@ body main .fotos:hover {
   transition: transform 0.5s ease-in-out;
 }
 
-body #servicios .contServ {
+body .servicios .contServ {
   margin: 20px;
   display: grid;
   grid-template-areas: "titulo1 titulo1" "catering textoc" "textod desayunos";
@@ -198,39 +185,44 @@ body #servicios .contServ {
   font-size: 2rem;
 }
 
-body #servicios .titulo1 {
+body .servicios .titulo1 {
   grid-area: titulo1;
 }
 
-body #servicios .catering {
+body .servicios .catering {
   grid-area: catering;
 }
 
-body #servicios .textoc {
+body .servicios .textoc {
   grid-area: textoc;
 }
 
-body #servicios .textod {
+body .servicios .textod {
   grid-area: textod;
 }
 
-body #servicios .desayunos {
+body .servicios .desayunos {
   grid-area: desayunos;
 }
 
-body #servicios .contServ img {
+body .servicios .contServ img {
   width: 100%;
   height: 100%;
   margin: 5px 5px;
 }
 
-body #contacto {
+body .contacto {
   position: relative;
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 1em;
   font-family: 'Roboto Mono', monospace;
-  font-weight: 100;
+  font-size: 1rem;
+}
+
+body .contacto .formulario {
+  text-align: left;
+  font-family: 'Roboto Mono', monospace;
 }
 
 body #carouselExampleFade {

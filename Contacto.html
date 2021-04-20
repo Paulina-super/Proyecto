@@ -9,25 +9,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="css/prueba.css" />
     <link rel="icon" href="Imagenes/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&family=Montserrat&family=Open+Sans&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=Permanent+Marker&family=Roboto&family=Stint+Ultra+Condensed&family=Yanone+Kaffeesatz&family=Open+Sans+Condensed:wght@700&family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
-        <div id="menu">
+        <div class="header">
             <img class="header__logo" src="Imagenes/Dorado Rústico Vintage Logotipo B.png" alt="logo Pour Tout Le Monde">
             <h1>Pour Tout Le Monde</h1>
             <h2>Pâtisserie</h2>
         </div>
-    </header>
-
-    <main>
         <div class="menu">
             <div class="dropdown">
                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                 Menú
-                </a>
+              Menú
+            </a>
 
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <li><a class="dropdown-item" href="index_paulasosa.html">Home</a></li>
@@ -38,8 +35,11 @@
                 </ul>
             </div>
         </div>
+    </header>
 
-        <section id="contacto">
+    <main>
+
+        <section class="contacto">
 
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -71,11 +71,10 @@
                     <label for="correo">Correo Electrónico</label>
                     <input type="email" placeholder="xxxxxxxx@xxxx.com" value=" " required>
                     <br>
-                    <h4>¿Como nos conociste?</h4>
+                    <h5>Dejanos tu consulta</h5>
                     <select>
-                        <option>Facebook</option>
-                        <option>Instagram</option>
-                        <option>Youtube</option>
+                        <option>Servicios</option>
+                        <option>Productos</option>
                         <option>Otros</option>
                 </select>
 
@@ -83,11 +82,11 @@
 
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">Consulta por servicios</label>
+                        <label class="custom-control-label" for="customCheck1">Facebook</label>
                         <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">Consulta por productos</label>
+                        <label class="custom-control-label" for="customCheck1">Instagram</label>
                         <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">Otras consultas</label>
+                        <label class="custom-control-label" for="customCheck1">Otros</label>
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Escribí tu mensaje</label>
@@ -100,6 +99,7 @@
 
         </section>
     </main>
+
     <footer>
         <div>
             <ul class="footer__lista">
