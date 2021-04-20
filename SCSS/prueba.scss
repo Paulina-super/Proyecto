@@ -63,7 +63,7 @@ body {
         .header__logo {
             padding: 5px 5px;
             margin: 10px;
-            width: 5%;
+            width: 4%;
             float: left;
         }
         /*.btn-group {
@@ -87,6 +87,7 @@ body {
         }*/
     }
     main {
+        padding: 5%;
         .home {
             display: flex;
             align-items: center;
@@ -172,7 +173,7 @@ body {
     }
     #servicios {
         .contServ {
-            margin: 10px;
+            margin: 20px;
             display: grid;
             grid-template-areas: "titulo1 titulo1" "catering textoc" "textod desayunos";
             grid-template-columns: 50% 50%;

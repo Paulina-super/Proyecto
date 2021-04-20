@@ -80,8 +80,12 @@ body header {
 body header .header__logo {
   padding: 5px 5px;
   margin: 10px;
-  width: 5%;
+  width: 4%;
   float: left;
+}
+
+body main {
+  padding: 5%;
 }
 
 body main .home {
@@ -184,7 +188,7 @@ body main .fotos:hover {
 }
 
 body #servicios .contServ {
-  margin: 10px;
+  margin: 20px;
   display: grid;
   grid-template-areas: "titulo1 titulo1" "catering textoc" "textod desayunos";
   grid-template-columns: 50% 50%;
