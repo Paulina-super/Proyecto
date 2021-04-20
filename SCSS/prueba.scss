@@ -51,30 +51,22 @@ p {
     color: $color2;
 }
 
-
-/*section {
-    height: 100vh;
-    padding: 10px;
-    margin: 10px;
-}*/
-
 body {
     background-color: $color4;
-    overflow-x: hidden;
     header {
         background-color: $color1;
         width: 100%;
-        height: 15%;
+        height: 10%;
         position: fixed;
         top: 0;
         z-index: 1;
         .header__logo {
             padding: 5px 5px;
             margin: 10px;
-            width: 6%;
+            width: 5%;
             float: left;
         }
-        .btn-group {
+        /*.btn-group {
             width: 50%;
             position: absolute;
             margin-left: 45%;
@@ -92,13 +84,10 @@ body {
         .btn btn-primary {
             font-family: 'Abhaya Libre', sans-serif;
             color: $color4;
-        }
+        }*/
     }
     main {
-        width: 100vw;
-        height: 100vh;
         .home {
-            height: 100vh;
             display: flex;
             align-items: center;
             .home__video {
@@ -121,10 +110,8 @@ body {
             }
         }
         .menu {
-            z-index: 1;
+            z-index: 5;
             display: flex;
-            padding: 1rem 2rem;
-            margin: 1rem;
             text-align: center;
             .btn {
                 background-color: $color1;
@@ -183,34 +170,37 @@ body {
             transition: transform 0.5s ease-in-out;
         }
     }
-    .contServ {
-        padding: 10px;
-        display: grid;
-        grid-template-areas: "titulo1 titulo1" "catering textoc" "textod desayunos";
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 5% 45% 1fr 45%;
-        grid-row-gap: 2px;
-        font-family: 'Roboto Mono', monospace;
-        font-weight: 100;
-    }
-    .titulo1 {
-        grid-area: titulo1;
-    }
-    .catering {
-        grid-area: catering;
-    }
-    .textoc {
-        grid-area: textoc;
-    }
-    .textod {
-        grid-area: textod;
-    }
-    .desayunos {
-        grid-area: desayunos;
-    }
-    #servicios img {
-        padding: 5px;
-        max-width: 95%;
+    #servicios {
+        .contServ {
+            margin: 10px;
+            display: grid;
+            grid-template-areas: "titulo1 titulo1" "catering textoc" "textod desayunos";
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 5% 45% 1fr 45%;
+            grid-row-gap: 2px;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 2rem;
+        }
+        .titulo1 {
+            grid-area: titulo1;
+        }
+        .catering {
+            grid-area: catering;
+        }
+        .textoc {
+            grid-area: textoc;
+        }
+        .textod {
+            grid-area: textod;
+        }
+        .desayunos {
+            grid-area: desayunos;
+        }
+        .contServ img {
+            width: 100%;
+            height: 100%;
+            margin: 5px 5px;
+        }
     }
     #contacto {
         position: relative;
@@ -219,6 +209,9 @@ body {
         gap: 1em;
         font-family: 'Roboto Mono', monospace;
         font-weight: 100;
+    }
+    #carouselExampleFade {
+        z-index: 0;
     }
     footer {
         display: grid;
