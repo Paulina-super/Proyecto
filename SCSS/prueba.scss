@@ -19,6 +19,7 @@
         font-family: 'Cinzel', serif;
         font-size: 2rem;
         color: $color3;
+        padding: 10px;
     }
     
     h2 {
@@ -53,6 +54,7 @@
     }
     
     p {
+        padding: 5px;
         text-align: center;
         font-family: 'Open Sans', sans-serif;
         font-size: 1rem;
@@ -64,7 +66,7 @@
         header {
             background-color: $color1;
             width: 100vw;
-            height: 10%;
+            height: 14%;
             position: fixed;
             top: 0;
             z-index: 1;
@@ -95,7 +97,7 @@
         }
         main {
             section {
-                margin: 9%;
+                margin: 10%;
             }
             .home {
                 display: flex;
