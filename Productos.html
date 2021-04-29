@@ -22,18 +22,17 @@
             <h1>Pour Tout Le Monde</h1>
             <h2>Pâtisserie</h2>
         </div>
-        <div class="menu ">
-            <div class="dropdown ">
-                <a class="btn btn-secondary dropdown-toggle " href="# " role="button " id="dropdownMenuLink " data-bs-toggle="dropdown " aria-expanded="false ">
+        <div class="menu">
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
               Menú
             </a>
 
-                <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink ">
-                    <li><a class="dropdown-item " href="index.html ">Home</a></li>
-                    <li><a class="dropdown-item " href="Productos.html ">Productos</a></li>
-                    <li><a class="dropdown-item " href="Servicios.html ">Servicios</a></li>
-                    <li><a class="dropdown-item " href="Quienes Somos.html ">¿Quienes Sómos?</a></li>
-                    <li><a class="dropdown-item " href="Contacto.html ">Contacto</a></li>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="Productos.html">Productos</a></li>
+                    <li><a class="dropdown-item" href="Servicios.html">Servicios</a></li>
+                    <li><a class="dropdown-item" href="Quienes Somos.html">¿Quienes Sómos?</a></li>
+                    <li><a class="dropdown-item" href="Contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </div>
@@ -41,38 +40,105 @@
     <main>
 
 
-        <!-- NUESTROS PRODUCTOS: FALTA TEXTO REAL-->
-        <section id="productos ">
 
-            <div class="titulo ">
-                <h3>Productos</h3>
+        <section id="productos">
+            <div class=row>
+                <div class="titulo ">
+                    <h3>Productos</h3>
+                </div>
             </div>
+            <!-- 
+            <div class="container">
+                <div class=row>
+                    <div class="titulo ">
+                        <h3>Productos</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="imagen1 ">
+                        <img class="fotos " src="Imagenes/Torta4.png " alt="Torta Selva Negra ">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="imagen2 ">
+                        <img class="fotos " src="Imagenes/Tarta2.png" alt="Tarta Frutal">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="imagen3 ">
+                        <img class="fotos " src="Imagenes/PanDulce2.png" alt="Pan Dulce">
+                    </div>
+                </div>
 
-            <div class="imagen1 ">
-                <img class="fotos " src="Imagenes/Torta4.png " alt="Torta Selva Negra ">
-            </div>
+                <div class="texto1 ">
+                    <h4>Tortas</h4>
+                    <p>Tortas o bizcochuelos decorados, rellenos en capas o bañados a pedido. Sabores a elección.</p>
+                </div>
 
-            <div class="imagen2 ">
-                <img class="fotos " src="Imagenes/Tarta2.png " alt="Tarta Frutal ">
-            </div>
 
-            <div class="imagen3 ">
-                <img class="fotos " src="Imagenes/PanDulce2.png " alt="Pan Dulce ">
-            </div>
+                <div class="texto2 ">
+                    <h4>Tartas</h4>
+                    <p>Tartas con rellenos frutales, crema, mousse o dulce de leche.</p>
+                </div>
 
-            <div class="texto1 ">
-                <h4>Tortas</h4>
-                <p>Tortas o bizcochuelos decorados, rellenos en capas o bañados a pedido. Sabores a elección.</p>
-            </div>
 
-            <div class="texto2 ">
-                <h4>Tartas</h4>
-                <p>Tartas con rellenos frutales, crema, mousse o dulce de leche.</p>
-            </div>
-
-            <div class="texto3 ">
-                <h4>Panificados</h4>
-                <p>Budines rellenos o bañados. Panes saborizados o integrales. Bizcochos dulces o salados.</p>
+                <div class="texto3 ">
+                    <h4>Panificados</h4>
+                    <p>Budines rellenos o bañados. Panes saborizados o integrales. Bizcochos dulces o salados.</p>
+                </div>
+            </div>-->
+            <div class="container my-4 w-100">
+                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="card" style="width:30rem;">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <img src="Imagenes/Torta4.png" class="card-img-top" alt="Torta Selva Negra">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Tortas</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="card" style="width:30rem;">
+                                <div class="row g-0">
+                                    <div class="col-md-8">
+                                        <img src="Imagenes/Tarta2.png" class="card-img-top" alt="Tarta Frutal">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Tortas</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="card" style="width:30rem;">
+                                <div class="row g-0">
+                                    <div class="col-md-8">
+                                        <img src="Imagenes/PanDulce2.png" class="card-img-top" alt="Pan Dulce">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Tortas</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
 
         </section>
