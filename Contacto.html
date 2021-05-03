@@ -9,14 +9,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/prueba.css" />
     <link rel="icon" href="Imagenes/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=Permanent+Marker&family=Roboto&family=Stint+Ultra+Condensed&family=Yanone+Kaffeesatz&family=Open+Sans+Condensed:wght@700&family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Lato&family=Montserrat&family=Open+Sans&family=Playball&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
         <div class="header">
-            <img class="header__logo" src="Imagenes/Dorado Rústico Vintage Logotipo B.png" alt="logo Pour Tout Le Monde">
+
             <h1>Pour Tout Le Monde</h1>
             <h2>Pâtisserie</h2>
         </div>
@@ -35,68 +35,87 @@
                 </ul>
             </div>
         </div>
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
 
         <section class="contacto">
-
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="4000">
-                        <img src="Imagenes/Carrusel1.png" class="d-block w-100" alt="Torta Rocklets">
+            <div class="container-fluid">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="4000">
+                            <img src="Imagenes/Carrusel1.png" class="d-block w-100" alt="Torta Rocklets">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="Imagenes/Carrusel2.png" class="d-block w-100" alt="Torta Oreo">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="Imagenes/Carrusel3.png" class="d-block w-100" alt="Torta Frutillas">
+                        </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="Imagenes/Carrusel2.png" class="d-block w-100" alt="Torta Oreo">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="Imagenes/Carrusel3.png" class="d-block w-100" alt="Torta Frutillas">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-            </div>
-            <div class="formulario">
-                <h3>Contacto</h3>
-                <form>
-                    <label for="nombre">Nombre y Apellido</label>
-                    <input type="text" placeholder="Nombre Apellido" value=" ">
-                    <br>
-                    <label for="correo">Correo Electrónico</label>
-                    <input type="email" placeholder="xxxxxxxx@xxxx.com" value=" " required>
-                    <br>
-                    <h5>Dejanos tu consulta</h5>
-                    <select>
+                </div>
+                <div class="formulario">
+                    <h3>Contacto</h3>
+                    <form>
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input type="text" placeholder="Nombre Apellido" value=" ">
+                        <br>
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" placeholder="xxxxxxxx@xxxx.com" value=" " required>
+                        <br>
+                        <h5>Dejanos tu consulta</h5>
+                        <select>
                         <option>Servicios</option>
                         <option>Productos</option>
                         <option>Otros</option>
                 </select>
 
-                    <br>
+                        <br>
 
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">Facebook</label>
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">Instagram</label>
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">Otros</label>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Escribí tu mensaje</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" col="1"></textarea>
-                    </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Facebook</label>
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Instagram</label>
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Otros</label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Escribí tu mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" col="1"></textarea>
+                        </div>
 
-                </form>
+                    </form>
+                </div>
+
             </div>
-
-
         </section>
     </main>
 
@@ -106,6 +125,8 @@
                 <li class="footer__lista--item">Desarrollado e implementado por KidsC</li>
                 <li class="footer__lista--item">© Copyright - Pour Tout Le Monde Pâtisserie 2021</li>
             </ul>
+        </div>
+        <div><img class="footer__logo" src="Imagenes/Dorado Rústico Vintage Logotipo B.png" alt="logo Pour Tout Le Monde">
         </div>
         <div class="redes">
             <nav>

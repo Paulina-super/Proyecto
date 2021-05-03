@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -10,9 +11,9 @@ html {
 
 h1 {
   text-align: center;
-  font-family: 'Cinzel', serif;
+  font-family: 'Allura', cursive;
   font-size: 2rem;
-  color: #af9a7c;
+  color: #B36568;
   padding: 10px;
 }
 
@@ -20,15 +21,15 @@ h2 {
   text-align: center;
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
-  color: #F9F5EA;
+  color: #DAC3B9;
 }
 
 h3 {
   text-transform: uppercase;
   text-align: center;
   font-family: 'Lato', sans-serif;
-  background-color: #4E2008;
-  color: #F9F5EA;
+  background-color: #201F1D;
+  color: #DAC3B9;
 }
 
 h4 {
@@ -36,7 +37,7 @@ h4 {
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
-  color: #A23607;
+  color: #982539;
 }
 
 h5 {
@@ -44,7 +45,7 @@ h5 {
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
-  color: #A23607;
+  color: #982539;
 }
 
 p {
@@ -52,27 +53,20 @@ p {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
-  color: #A23607;
+  color: #982539;
 }
 
 body {
-  background-color: #F9F5EA;
+  background-color: #DAC3B9;
 }
 
 body header {
-  background-color: #4E2008;
+  background-color: #201F1D;
   width: 100vw;
   height: 14%;
   position: fixed;
   top: 0;
   z-index: 1;
-}
-
-body header .header__logo {
-  padding: 5px;
-  margin: 10px;
-  width: 4%;
-  float: left;
 }
 
 body header .menu {
@@ -82,19 +76,19 @@ body header .menu {
 }
 
 body header .menu .btn {
-  background-color: #4E2008;
+  background-color: #201F1D;
 }
 
 body header .menu .dropdown-menu {
-  background-color: #4E2008;
+  background-color: #201F1D;
 }
 
 body header .menu .dropdown-menu a {
-  color: #F9F5EA;
+  color: #DAC3B9;
 }
 
 body header .menu .dropdown-menu a:hover {
-  background-color: #af9a7c;
+  background-color: #B36568;
   cursor: pointer;
 }
 
@@ -233,13 +227,20 @@ body #carouselExampleFade {
 
 body footer {
   display: grid;
-  grid-template-columns: 90% 10%;
+  grid-template-columns: 40% 50% 10%;
   grid-column-gap: 1px;
-  background-color: #4E2008;
+  background-color: #201F1D;
   width: 100vw;
   height: 60px;
   bottom: 0;
   position: fixed;
+}
+
+body footer .footer__logo {
+  padding: 5px;
+  margin: 10px;
+  width: 4%;
+  float: center;
 }
 
 body footer .footer__lista {
@@ -251,7 +252,7 @@ body footer .footer__lista .footer__lista--item {
   font-family: 'Lato', sans-serif;
   text-decoration: none;
   font-size: 1rem;
-  color: #F9F5EA;
+  color: #DAC3B9;
 }
 
 body footer .redes__link--imagen {
@@ -283,3 +284,21 @@ img.productos {
 img.productos {
   width: 10%;
 }
+
+/*<div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="fotos " src="Imagenes/Torta4.png " alt="Torta Selva Negra ">
+                        <div class="texto1 ">
+                            <h4>Tortas</h4>
+                            <p>Tortas o bizcochuelos decorados, rellenos en capas o bañados a pedido. Sabores a elección.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="fotos " src="Imagenes/Tarta2.png " alt="Tarta Frutal ">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="fotos " src="Imagenes/PanDulce2.png " alt="Pan Dulce ">
+                    </div>
+                </div>
+            </div>*/

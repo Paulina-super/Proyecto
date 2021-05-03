@@ -1,7 +1,8 @@
-$color1:#391603;
-$color2:#A23607;
-$color3:#af9a7c;
-$color4:#F9F5EA;
+$color1:#201F1D;
+$color2:#982539;
+$color3:#B36568;
+$color4:#DAC3B9;
+$color5:#CEA597;
 $ftexto:'Roboto',
 sans-serif;
 * {
@@ -16,7 +17,7 @@ html {
 
 h1 {
     text-align: center;
-    font-family: 'Cinzel', serif;
+    font-family: 'Allura', cursive;
     font-size: 2rem;
     color: $color3;
     padding: 10px;
@@ -70,12 +71,6 @@ body {
         position: fixed;
         top: 0;
         z-index: 1;
-        .header__logo {
-            padding: 5px;
-            margin: 10px;
-            width: 4%;
-            float: left;
-        }
         .menu {
             z-index: 2;
             display: flex;
@@ -161,7 +156,6 @@ body {
             transform: scale(1.05);
             transition: transform 0.5s ease-in-out;
         }
-        .carousel-inner {}
     }
     .servicios {
         .contServ {
@@ -212,13 +206,19 @@ body {
     }
     footer {
         display: grid;
-        grid-template-columns: 90% 10%;
+        grid-template-columns: 50% 40% 10%;
         grid-column-gap: 1px;
         background-color: $color1;
         width: 100vw;
         height: 60px;
         bottom: 0;
         position: fixed;
+        .footer__logo {
+            padding: 5px;
+            margin: 10px;
+            width: 4%;
+            float: center;
+        }
         .footer__lista {
             list-style: none;
             margin: 1px;
