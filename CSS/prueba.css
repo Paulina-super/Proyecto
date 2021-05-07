@@ -14,14 +14,14 @@ h1 {
   font-family: 'Allura', cursive;
   font-size: 2rem;
   color: #B36568;
-  padding: 10px;
+  padding: 8px;
 }
 
 h2 {
   text-align: center;
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
-  color: #DAC3B9;
+  color: #B36568;
 }
 
 h3 {
@@ -63,8 +63,8 @@ body {
 body header {
   background-color: #201F1D;
   width: 100vw;
-  height: 14%;
-  position: fixed;
+  height: 10%;
+  position: absolute;
   top: 0;
   z-index: 1;
 }
@@ -75,19 +75,16 @@ body header .menu {
   text-align: center;
 }
 
-body header .menu .btn {
+body header .menu .navbar-nav {
   background-color: #201F1D;
 }
 
-body header .menu .dropdown-menu {
+body header .menu .navbar-nav a {
   background-color: #201F1D;
-}
-
-body header .menu .dropdown-menu a {
   color: #DAC3B9;
 }
 
-body header .menu .dropdown-menu a:hover {
+body header .menu .navbar-nav a:hover {
   background-color: #B36568;
   cursor: pointer;
 }
@@ -227,7 +224,7 @@ body #carouselExampleFade {
 
 body footer {
   display: grid;
-  grid-template-columns: 40% 50% 10%;
+  grid-template-columns: 50% 40% 10%;
   grid-column-gap: 1px;
   background-color: #201F1D;
   width: 100vw;
@@ -239,7 +236,7 @@ body footer {
 body footer .footer__logo {
   padding: 5px;
   margin: 10px;
-  width: 4%;
+  width: 6%;
   float: center;
 }
 
