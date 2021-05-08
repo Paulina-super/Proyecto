@@ -1,267 +1,272 @@
-        $color1:#201F1D;
-        $color2:#982539;
-        $color3:#B36568;
-        $color4:#DAC3B9;
-        $color5:#CEA597;
-        $ftexto:'Roboto',
-        sans-serif;
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+$color1:#201F1D;
+$color2:#982539;
+$color3:#B36568;
+$color4:#DAC3B9;
+$color5:#CEA597;
+$ftexto:'Roboto',
+sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Allura', cursive;
+    font-size: 2rem;
+    color: $color3;
+    padding: 8px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: $color3;
+}
+
+h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    background-color: $color1;
+    color: $color4;
+}
+
+h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: $color2;
+}
+
+h5 {
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: $color2;
+}
+
+p {
+    padding: 5px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: $color2;
+}
+
+body {
+    header {
+        background-color: $color1;
+        width: 100vw;
+        height: 10%;
+        position: relative;
+        top: 0;
+        z-index: 1;
+        .menu {
+            z-index: 2;
+            .navbar-nav {
+                position: right;
+                background-color: $color1;
+                a {
+                    background-color: $color1;
+                    color: $color4;
+                }
+                a:hover {
+                    background-color: $color3;
+                    cursor: pointer;
+                }
+            }
         }
-        
-        html {
-            scroll-behavior: smooth;
+    }
+    section {
+        margin: 10%;
+    }
+    .home {
+        display: flex;
+        align-items: center;
+        .home__video {
+            position: relative;
+            z-index: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            .home__video video {
+                min-width: 100%;
+                min-height: 100%;
+            }
         }
-        
-        h1 {
+        .home__titulo {
+            margin: 10% 30%;
+            z-index: 1;
             text-align: center;
-            font-family: 'Allura', cursive;
-            font-size: 2rem;
-            color: $color3;
-            padding: 8px;
         }
-        
-        h2 {
+    }
+    main {
+        #productos {
+            display: grid;
+            grid-template-areas: "titulo titulo titulo" "imagen1 imagen2 imagen3" "texto1 texto2 texto3";
+            grid-template-columns: 25% 25% 25%;
+            grid-template-rows: 10% auto 40%;
+            grid-column-gap: 50px;
+            grid-row-gap: 50px;
+            justify-content: center;
             text-align: center;
+        }
+        .titulo {
+            grid-area: titulo;
+        }
+        .imagen1 {
+            grid-area: imagen1;
+        }
+        .imagen2 {
+            grid-area: imagen2;
+        }
+        .imagen3 {
+            grid-area: imagen3;
+        }
+        .texto1 {
+            grid-area: texto1;
+        }
+        .texto2 {
+            grid-area: texto2;
+        }
+        .texto3 {
+            grid-area: texto3;
+        }
+        .fotos {
+            max-width: 100%;
+            border-radius: 10px 10px 10px 10px;
+            -webkit-box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
+            -moz-box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
+            box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
+        }
+        .fotos:hover {
+            transform: scale(1.05);
+            transition: transform 0.5s ease-in-out;
+        }
+    }
+    .servicios {
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        margin: 20px;
+        display: grid;
+        grid-template-areas: "titulo1 titulo1" "catering textoc" "textod desayunos";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 5% 45% 1fr 45%;
+        grid-row-gap: 2px;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 2rem;
+    }
+    .titulo1 {
+        grid-area: titulo1;
+    }
+    .catering {
+        grid-area: catering;
+    }
+    .textoc {
+        grid-area: textoc;
+    }
+    .textod {
+        grid-area: textod;
+    }
+    .desayunos {
+        grid-area: desayunos;
+    }
+    .contServ img {
+        width: 100%;
+        height: 100%;
+        margin: 5px 5px;
+    }
+    .contacto {
+        position: relative;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 1em;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 1rem;
+        .formulario {
+            text-align: left;
+            font-family: 'Roboto Mono', monospace;
+        }
+    }
+}
+
+#carouselExampleFade {
+    z-index: 0;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 50% 40% 10%;
+    grid-column-gap: 1px;
+    background-color: $color1;
+    width: 100vw;
+    height: 60px;
+    bottom: 0;
+    position: relative;
+    .footer__logo {
+        padding: 5px;
+        margin: 10px;
+        width: 6%;
+        float: center;
+    }
+    .footer__lista {
+        list-style: none;
+        margin: 1px;
+        .footer__lista--item {
             font-family: 'Lato', sans-serif;
+            text-decoration: none;
             font-size: 1rem;
-            color: $color3;
-        }
-        
-        h3 {
-            text-transform: uppercase;
-            text-align: center;
-            font-family: 'Lato', sans-serif;
-            background-color: $color1;
             color: $color4;
         }
-        
-        h4 {
-            text-align: center;
-            text-transform: uppercase;
-            font-family: 'Lato', sans-serif;
-            font-size: 1rem;
-            color: $color2;
-        }
-        
-        h5 {
-            text-align: left;
-            text-transform: uppercase;
-            font-family: 'Lato', sans-serif;
-            font-size: 1rem;
-            color: $color2;
-        }
-        
-        p {
-            padding: 5px;
-            text-align: center;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 1rem;
-            color: $color2;
-        }
-        
-        body {
-            background-color: $color4;
-            header {
-                background-color: $color1;
-                width: 100vw;
-                height: 10%;
-                position: absolute;
-                top: 0;
-                z-index: 1;
-                .menu {
-                    z-index: 2;
-                    display: flex;
-                    text-align: center;
-                    .navbar-nav {
-                        background-color: $color1;
-                        a {
-                            background-color: $color1;
-                            color: $color4;
-                        }
-                        a:hover {
-                            background-color: $color3;
-                            cursor: pointer;
-                        }
-                    }
-                }
-            }
-            main {
-                section {
-                    margin: 10%;
-                }
-                .home {
-                    display: flex;
-                    align-items: center;
-                    .home__video {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100vh;
-                        .home__video video {
-                            min-width: 100%;
-                            min-height: 100%;
-                        }
-                    }
-                    .home__titulo {
-                        margin: 10% 30%;
-                        z-index: 1;
-                        text-align: center;
-                    }
-                }
-                #productos {
-                    display: grid;
-                    grid-template-areas: "titulo titulo titulo" "imagen1 imagen2 imagen3" "texto1 texto2 texto3";
-                    grid-template-columns: 25% 25% 25%;
-                    grid-template-rows: 10% auto 40%;
-                    grid-column-gap: 50px;
-                    grid-row-gap: 50px;
-                    justify-content: center;
-                    text-align: center;
-                }
-                .titulo {
-                    grid-area: titulo;
-                }
-                .imagen1 {
-                    grid-area: imagen1;
-                }
-                .imagen2 {
-                    grid-area: imagen2;
-                }
-                .imagen3 {
-                    grid-area: imagen3;
-                }
-                .texto1 {
-                    grid-area: texto1;
-                }
-                .texto2 {
-                    grid-area: texto2;
-                }
-                .texto3 {
-                    grid-area: texto3;
-                }
-                .fotos {
-                    max-width: 100%;
-                    border-radius: 10px 10px 10px 10px;
-                    -webkit-box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
-                    -moz-box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
-                    box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
-                }
-                .fotos:hover {
-                    transform: scale(1.05);
-                    transition: transform 0.5s ease-in-out;
-                }
-            }
-            .servicios {
-                .contServ {
-                    margin: 20px;
-                    display: grid;
-                    grid-template-areas: "titulo1 titulo1" "catering textoc" "textod desayunos";
-                    grid-template-columns: 50% 50%;
-                    grid-template-rows: 5% 45% 1fr 45%;
-                    grid-row-gap: 2px;
-                    font-family: 'Roboto Mono', monospace;
-                    font-size: 2rem;
-                }
-                .titulo1 {
-                    grid-area: titulo1;
-                }
-                .catering {
-                    grid-area: catering;
-                }
-                .textoc {
-                    grid-area: textoc;
-                }
-                .textod {
-                    grid-area: textod;
-                }
-                .desayunos {
-                    grid-area: desayunos;
-                }
-                .contServ img {
-                    width: 100%;
-                    height: 100%;
-                    margin: 5px 5px;
-                }
-            }
-            .contacto {
-                position: relative;
-                display: grid;
-                grid-template-columns: 50% 50%;
-                gap: 1em;
-                font-family: 'Roboto Mono', monospace;
-                font-size: 1rem;
-                .formulario {
-                    text-align: left;
-                    font-family: 'Roboto Mono', monospace;
-                }
-            }
-            #carouselExampleFade {
-                z-index: 0;
-            }
-            footer {
-                display: grid;
-                grid-template-columns: 50% 40% 10%;
-                grid-column-gap: 1px;
-                background-color: $color1;
-                width: 100vw;
-                height: 60px;
-                bottom: 0;
-                position: fixed;
-                .footer__logo {
-                    padding: 5px;
-                    margin: 10px;
-                    width: 6%;
-                    float: center;
-                }
-                .footer__lista {
-                    list-style: none;
-                    margin: 1px;
-                    .footer__lista--item {
-                        font-family: 'Lato', sans-serif;
-                        text-decoration: none;
-                        font-size: 1rem;
-                        color: $color4;
-                    }
-                }
-                .redes__link--imagen {
-                    width: 15%;
-                    height: 15%;
-                    margin: 10px 5px;
-                }
-            }
-        }
-        
-        body {
-            @if $color3==#d3c1a9 {
-                color: $color2;
-            }
-            @else if $color3==#4E2008 {
-                color: #F9F5EA;
-            }
-            @else {
-                color: #af9a7c;
-            }
-        }
-        
-        $animaciones:(imagen1:#4E2008, imagen2:#A23607, imagen3:#af9a7c, );
-        @for $i from 1 to 3 {
-            #productos-#{$i} {
-                box-shadow: 10% + $i;
-            }
-        }
-        
-        @each $animaciones in imagen1,
-        imagen2,
-        imagen3 {
-            img.#{productos} {
-                width: 10%;
-            }
-        }
-        /*<div class="container">
+    }
+    .redes__link--imagen {
+        width: 15%;
+        height: 15%;
+        margin: 10px 5px;
+    }
+}
+
+
+/*body {
+    @if $color3==#d3c1a9 {
+        color: $color2;
+    }
+    @else if $color3==#4E2008 {
+        color: #F9F5EA;
+    }
+    @else {
+        color: #af9a7c;
+    }
+}
+
+$animaciones:(imagen1:#4E2008, imagen2:#A23607, imagen3:#af9a7c, );
+@for $i from 1 to 3 {
+    #productos-#{$i} {
+        box-shadow: 10% + $i;
+    }
+}
+
+@each $animaciones in imagen1,
+imagen2,
+imagen3 {
+    img.#{productos} {
+        width: 10%;
+    }
+}
+
+
+/*<div class="container">
                 <div class="row">
                     <div class="col-md-4">
                         <img class="fotos " src="Imagenes/Torta4.png " alt="Torta Selva Negra ">
