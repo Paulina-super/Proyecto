@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -92,8 +93,12 @@ body section {
 }
 
 body .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .home .home__video {
@@ -117,63 +122,90 @@ body .home .home__titulo {
 }
 
 body main #productos .grid-container {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
-  grid-template-areas: "foto1 texto1 foto2 texto2" "texto3 foto3 texto4 foto4" "foto5 texto5 foto6 texto6";
+      grid-template-areas: "foto1 texto1 foto2 texto2" "texto3 foto3 texto4 foto4" "foto5 texto5 foto6 texto6";
 }
 
 body main #productos .foto1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: foto1;
 }
 
 body main #productos .texto1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: texto1;
   background-color: #201F1D;
 }
 
 body main #productos .foto2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: foto2;
 }
 
 body main #productos .texto2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
   grid-area: texto2;
   background-color: #982539;
 }
 
 body main #productos .texto3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: texto3;
   background-color: #B36568;
 }
 
 body main #productos .foto3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: foto3;
 }
 
 body main #productos .texto4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: texto4;
   background-color: #CEA597;
 }
 
 body main #productos .foto4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
   grid-area: foto4;
 }
 
 body main #productos .foto5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: foto5;
 }
 
 body main #productos .texto5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
   grid-area: texto5;
   background-color: #201F1D;
 }
 
 body main #productos .foto6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
   grid-area: foto6;
 }
 
 body main #productos .texto6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
   grid-area: texto6;
   background-color: #B36568;
 }
@@ -188,39 +220,57 @@ body main #productos .fotos {
 }
 
 body main #productos .fotos:hover {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 body main .servicios {
   background: url(../Imagenes/fondo.png);
   margin: 20px;
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: "titulo1 titulo1" "catering textoc" "textod desayunos";
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 5% 45% 1fr 45%;
+      grid-template-areas: "titulo1 titulo1" "catering textoc" "textod desayunos";
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 5% 45% 1fr 45%;
+      grid-template-rows: 5% 45% 1fr 45%;
   grid-row-gap: 2px;
   font-family: 'Roboto Mono', monospace;
   font-size: 2rem;
 }
 
 body main .titulo1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: titulo1;
 }
 
 body main .catering {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: catering;
 }
 
 body main .textoc {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: textoc;
 }
 
 body main .textod {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: textod;
 }
 
 body main .desayunos {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
   grid-area: desayunos;
 }
 
@@ -231,20 +281,32 @@ body main .contServ img {
 }
 
 body main .contacto .grid-container {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
-  grid-template-areas: "carrusel carrusel formulario formulario" "carrusel carrusel formulario formulario";
+      grid-template-areas: "carrusel carrusel formulario formulario" "carrusel carrusel formulario formulario";
 }
 
 body main .contacto .carrusel {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: carrusel;
   border-radius: 100px 100px 100px 100px;
+  -webkit-box-shadow: 2px 1px 14px 3px #4e2008;
   box-shadow: 2px 1px 14px 3px #4e2008;
 }
 
 body main .contacto .formulario {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
   grid-area: formulario;
   margin: 2%;
 }
@@ -259,8 +321,10 @@ body #carouselExampleFade {
 }
 
 body footer {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 50% 40% 10%;
+  -ms-grid-columns: 50% 40% 10%;
+      grid-template-columns: 50% 40% 10%;
   grid-column-gap: 1px;
   background-color: #201F1D;
   width: 100vw;
@@ -299,11 +363,13 @@ body body {
 }
 
 body #productos-1 {
-  box-shadow: 11%;
+  -webkit-box-shadow: 11%;
+          box-shadow: 11%;
 }
 
 body #productos-2 {
-  box-shadow: 12%;
+  -webkit-box-shadow: 12%;
+          box-shadow: 12%;
 }
 
 body img.productos {
