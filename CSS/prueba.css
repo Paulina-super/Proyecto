@@ -26,7 +26,9 @@ h2 {
 h3 {
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  margin-bottom: 20px;
   background-color: #201F1D;
   color: #DAC3B9;
 }
@@ -40,7 +42,7 @@ h4 {
 }
 
 h5 {
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
@@ -59,7 +61,13 @@ p {
 }
 
 body {
-  overflow-x: hidden;
+  background: #DAC3B9;
+}
+
+body .container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body header {
@@ -76,7 +84,6 @@ body header .menu {
 }
 
 body header .menu .navbar-nav {
-  position: right;
   background-color: #201F1D;
 }
 
@@ -183,13 +190,6 @@ body main #productos .texto6 {
 
 body main #productos .fotos {
   max-width: 100%;
-  border-radius: 1px 1px 1px 1px;
-  box-shadow: 2px 1px 14px 3px #4e2008;
-}
-
-body main #productos .fotos:hover {
-  transform: scale(1.05);
-  transition: transform 0.5s ease-in-out;
 }
 
 body main .servicios {
@@ -215,10 +215,45 @@ body main .contacto .formulario {
   border-radius: 7px;
 }
 
-body main .contacto textarea {
+body main .contacto form {
   min-height: 50%;
   max-height: 100%;
   max-width: 100%;
+}
+
+body main .contacto form label,
+body main .contacto form select,
+body main .contacto form textarea,
+body main .contacto form input {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #201F1D;
+  margin-bottom: 15px;
+  padding: 4px;
+  box-sizing: border-box;
+  border: none;
+}
+
+body main .contacto form label textarea,
+body main .contacto form select textarea,
+body main .contacto form textarea textarea,
+body main .contacto form input textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+body main .contacto form #boton {
+  background-color: #201F1D;
+  color: #DAC3B9;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+
+body main .contacto form #boton #boton:hover {
+  cursor: pointer;
 }
 
 body #carouselExampleFade {
@@ -283,6 +318,12 @@ body img.productos {
 
 body img.productos {
   width: 10%;
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+  }
 }
 
 /*grid-area: carrusel;
