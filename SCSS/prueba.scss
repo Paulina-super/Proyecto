@@ -20,7 +20,7 @@ h1 {
     font-family: 'Allura', cursive;
     font-size: 2rem;
     color: $color3;
-    padding: 8px;
+    padding: 4px;
 }
 
 h2 {
@@ -214,13 +214,6 @@ body {
                 gap: 0px 0px;
                 grid-template-areas: "carrusel carrusel formulario formulario" "carrusel carrusel formulario formulario";
             }
-            .carrusel {
-                grid-area: carrusel;
-                border-radius: 100px 100px 100px 100px;
-                -webkit-box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
-                -moz-box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
-                box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
-            }
             .formulario {
                 grid-area: formulario;
                 margin: 2%;
@@ -290,3 +283,10 @@ body {
         }
     }
 }
+
+
+/*grid-area: carrusel;
+                    border-radius: 100px 100px 100px 100px;
+                    -webkit-box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
+                    -moz-box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
+                    box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);*/
