@@ -183,11 +183,8 @@ body main #productos .texto6 {
 
 body main #productos .fotos {
   max-width: 100%;
-  /*border-radius: 1px 1px 1px 1px;
-                 -webkit-box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
-                 -moz-box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
-                 box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
-             */
+  border-radius: 1px 1px 1px 1px;
+  box-shadow: 2px 1px 14px 3px #4e2008;
 }
 
 body main #productos .fotos:hover {
@@ -196,45 +193,13 @@ body main #productos .fotos:hover {
 }
 
 body main .servicios {
-  margin: 20px;
-  display: grid;
-  grid-template-areas: "titulo1 titulo1" "catering textoc" "textod desayunos";
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 5% 45% 1fr 45%;
-  grid-row-gap: 2px;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 2rem;
-}
-
-body main .titulo1 {
-  grid-area: titulo1;
-}
-
-body main .catering {
-  grid-area: catering;
-}
-
-body main .textoc {
-  grid-area: textoc;
-}
-
-body main .textod {
-  grid-area: textod;
-}
-
-body main .desayunos {
-  grid-area: desayunos;
-}
-
-body main .contServ img {
-  width: 100%;
-  height: 100%;
-  margin: 5px 5px;
+  height: 100vh;
+  width: 100vw;
 }
 
 body main .contacto {
-  height: 75vh;
-  background: url(../Imagenes/fondoa.png);
+  height: 100vh;
+  background: url(../Imagenes/muff.png);
   background-size: 100vw 100vh;
   background-attachment: fixed;
   margin: 0;
@@ -248,6 +213,12 @@ body main .contacto .formulario {
   box-sizing: border-box;
   margin-top: 20px;
   border-radius: 7px;
+}
+
+body main .contacto textarea {
+  min-height: 50%;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 body #carouselExampleFade {
