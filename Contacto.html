@@ -38,65 +38,46 @@
     </header>
     <main>
         <section class="contacto">
-            <div class="grid-container">
-                <div class="carrusel">
-                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="4000">
-                                <img src="Imagenes/Carrusel1.png" class="d-block w-100" alt="Torta Rocklets">
-                            </div>
-                            <div class="carousel-item" data-bs-interval="4000">
-                                <img src="Imagenes/Carrusel2.png" class="d-block w-100" alt="Torta Oreo">
-                            </div>
-                            <div class="carousel-item" data-bs-interval="4000">
-                                <img src="Imagenes/Carrusel3.png" class="d-block w-100" alt="Torta Frutillas">
-                            </div>
 
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                        </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                        </button>
-                        </div>
-                    </div>
-                </div>
+            <div class="formulario">
 
-
-                <div class="formulario">
+                <form>
                     <h3>Contacto</h3>
-                    <form>
-                        <label for="nombre">Nombre y Apellido</label>
-                        <input type="text" placeholder="Nombre Apellido" value=" ">
-                        <br>
-                        <label for="correo">Correo Electrónico</label>
-                        <input type="email" placeholder="xxxxxxxx@xxxx.com" value=" " required>
-                        <br>
-                        <h5>Dejanos tu consulta</h5>
-                        <select>
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" placeholder="Nombre Apellido" value=" ">
+                    <br>
+                    <label for="nombre">Teléfono</label>
+                    <input type="phone" placeholder="Teléfono" value=" ">
+                    <br>
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" placeholder="xxxxxxxx@xxxx.com" value=" " required>
+                    <br>
+                    <h5>Dejanos tu consulta</h5>
+                    <select>
                         <option>Servicios</option>
                         <option>Productos</option>
                         <option>Otros</option>
-                    </select>
-                        <br>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="customCheck1">
-                            <label class="custom-control-label" for="customCheck1">Facebook</label>
-                            <input type="checkbox" class="custom-control-input" id="customCheck1">
-                            <label class="custom-control-label" for="customCheck1">Instagram</label>
-                            <input type="checkbox" class="custom-control-input" id="customCheck1">
-                            <label class="custom-control-label" for="customCheck1">Otros</label>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Escribí tu mensaje</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" col="1"></textarea>
-                        </div>
+                        </select>
 
-                    </form>
-                </div>
+                    <br>
+
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Facebook</label>
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Instagram</label>
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Otros</label>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Escribí tu mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" col="1"></textarea>
+                    </div>
+
+                </form>
             </div>
+
 
         </section>
     </main>

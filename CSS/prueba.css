@@ -48,6 +48,9 @@ h5 {
 }
 
 p {
+  width: 100%;
+  min-width: 50%;
+  max-width: 90%;
   padding: 5px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
@@ -56,7 +59,7 @@ p {
 }
 
 body {
-  overflow-x: none;
+  overflow-x: hidden;
 }
 
 body header {
@@ -193,7 +196,6 @@ body main #productos .fotos:hover {
 }
 
 body main .servicios {
-  background: url(../Imagenes/fondo.png);
   margin: 20px;
   display: grid;
   grid-template-areas: "titulo1 titulo1" "catering textoc" "textod desayunos";
@@ -230,22 +232,22 @@ body main .contServ img {
   margin: 5px 5px;
 }
 
-body main .contacto .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas: "carrusel carrusel formulario formulario" "carrusel carrusel formulario formulario";
+body main .contacto {
+  height: 75vh;
+  background: url(../Imagenes/fondoa.png);
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  margin: 0;
 }
 
 body main .contacto .formulario {
-  grid-area: formulario;
-  margin: 2%;
-}
-
-body main .contacto .formulario {
-  text-align: left;
-  font-family: 'Roboto Mono', monospace;
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
 }
 
 body #carouselExampleFade {
