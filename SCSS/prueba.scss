@@ -164,10 +164,11 @@ body {
             padding: 20%;
         }
     }
-    .quienesSomos {
-        background-color: $color3;
-        .quienes {
-            margin: 20%;
+    #quienesSomos {
+        background-color: $color3, !important;
+        .carouselExampleIndicators {
+            padding: 20%;
+            margin: 50%;
         }
     }
     .contacto {
@@ -220,39 +221,34 @@ body {
             }
         }
     }
-}
-
-#carouselExampleFade {
-    z-index: 0;
-}
-
-footer {
-    display: grid;
-    grid-template-columns: 50% 40% 10%;
-    grid-column-gap: 0.063rem;
-    background-color: $color1;
-    width: 100vw;
-    height: 4.375rem;
-    bottom: 0;
-    position: relative;
-    .footer__logo {
-        padding: 0.313rem;
-        width: 7%;
-        float: center;
-    }
-    .footer__lista {
-        list-style: none;
-        margin: 0.063rem;
-        .footer__lista--item {
-            font-family: 'Lato', sans-serif;
-            text-decoration: none;
-            font-size: 1rem;
-            color: $color4;
+    footer {
+        display: grid;
+        grid-template-columns: 50% 40% 10%;
+        grid-column-gap: 0.063rem;
+        background-color: $color1;
+        width: 100vw;
+        height: 4.375rem;
+        bottom: 0;
+        position: relative;
+        .footer__logo {
+            padding: 0.313rem;
+            width: 7%;
+            float: center;
         }
-    }
-    .redes__link--imagen {
-        width: 18%;
-        margin: 0.313rem;
+        .footer__lista {
+            list-style: none;
+            margin: 0.063rem;
+            .footer__lista--item {
+                font-family: 'Lato', sans-serif;
+                text-decoration: none;
+                font-size: 1rem;
+                color: $color4;
+            }
+        }
+        .redes__link--imagen {
+            width: 18%;
+            margin: 0.313rem;
+        }
     }
 }
 

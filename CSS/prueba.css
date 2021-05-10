@@ -165,19 +165,25 @@ body main #productos .fotos {
   max-width: 100%;
 }
 
-body main .servicios .carousel-inner {
+body main #productos .fotos:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s erase-in-out;
+}
+
+body .servicios .carousel-inner {
   padding: 20%;
 }
 
-body main .quienesSomos {
-  background-color: #B36568;
+body #quienesSomos {
+  background-color: #B36568, !important;
 }
 
-body main .quienesSomos .quienes {
-  margin: 20%;
+body #quienesSomos .carouselExampleIndicators {
+  padding: 20%;
+  margin: 50%;
 }
 
-body main .contacto {
+body .contacto {
   background: url(../Imagenes/bas.png);
   background-size: 100vw 100vh;
   background-attachment: fixed;
@@ -187,7 +193,7 @@ body main .contacto {
   padding-bottom: 100px;
 }
 
-body main .contacto .formulario {
+body .contacto .formulario {
   width: 450px;
   margin: auto;
   background: rgba(218, 195, 185, 0.4);
@@ -196,16 +202,16 @@ body main .contacto .formulario {
   border-radius: 7px;
 }
 
-body main .contacto form {
+body .contacto form {
   min-height: 50%;
   max-height: 100%;
   max-width: 100%;
 }
 
-body main .contacto form label,
-body main .contacto form select,
-body main .contacto form textarea,
-body main .contacto form input {
+body .contacto form label,
+body .contacto form select,
+body .contacto form textarea,
+body .contacto form input {
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
@@ -216,16 +222,16 @@ body main .contacto form input {
   border: none;
 }
 
-body main .contacto form label textarea,
-body main .contacto form select textarea,
-body main .contacto form textarea textarea,
-body main .contacto form input textarea {
+body .contacto form label textarea,
+body .contacto form select textarea,
+body .contacto form textarea textarea,
+body .contacto form input textarea {
   min-height: 100px;
   max-height: 200px;
   max-width: 100%;
 }
 
-body main .contacto form #boton {
+body .contacto form #boton {
   background-color: #201F1D;
   color: #DAC3B9;
   padding: 10px;
@@ -233,12 +239,8 @@ body main .contacto form #boton {
   width: 100%;
 }
 
-body main .contacto form #boton #boton:hover {
+body .contacto form #boton #boton:hover {
   cursor: pointer;
-}
-
-body #carouselExampleFade {
-  z-index: 0;
 }
 
 body footer {
@@ -276,7 +278,7 @@ body footer .redes__link--imagen {
 }
 
 @media (max-width: 480px) {
-  body form {
+  form {
     width: 100%;
   }
 }
