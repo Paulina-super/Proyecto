@@ -99,10 +99,6 @@ body header .menu .navbar-nav a:hover {
   cursor: pointer;
 }
 
-body section {
-  margin: 1rem;
-}
-
 body .home {
   display: flex;
   align-items: center;
@@ -136,7 +132,7 @@ body main #productos .foto1 {
 
 body main #productos .texto1 {
   grid-area: texto1;
-  background-color: #201F1D;
+  background-color: #DAC3B9;
 }
 
 body main #productos .foto2 {

@@ -98,9 +98,6 @@ body {
             }
         }
     }
-    section {
-        margin: 1rem;
-    }
     .home {
         display: flex;
         align-items: center;
@@ -131,7 +128,7 @@ body {
             }
             .texto1 {
                 grid-area: texto1;
-                background-color: $color1;
+                background-color: $color4;
             }
             .foto2 {
                 grid-area: foto2;
