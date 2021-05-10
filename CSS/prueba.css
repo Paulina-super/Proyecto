@@ -131,9 +131,9 @@ body .home .home__titulo {
 body main #productos .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
-  grid-template-areas: "foto1 texto1 foto2 texto2" "texto3 foto3 texto4 foto4" "foto5 texto5 foto6 texto6";
+  grid-template-areas: "foto1 texto1 foto2 texto2" "texto3 foto3 texto4 foto4";
 }
 
 body main #productos .foto1 {
@@ -170,24 +170,6 @@ body main #productos .texto4 {
 
 body main #productos .foto4 {
   grid-area: foto4;
-}
-
-body main #productos .foto5 {
-  grid-area: foto5;
-}
-
-body main #productos .texto5 {
-  grid-area: texto5;
-  background-color: #201F1D;
-}
-
-body main #productos .foto6 {
-  grid-area: foto6;
-}
-
-body main #productos .texto6 {
-  grid-area: texto6;
-  background-color: #B36568;
 }
 
 body main #productos .fotos {
@@ -270,7 +252,7 @@ body footer {
   background-color: #201F1D;
   width: 100vw;
   height: 60px;
-  margin-bottom: 0;
+  bottom: 0;
   position: relative;
 }
 

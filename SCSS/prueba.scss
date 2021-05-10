@@ -127,9 +127,9 @@ body {
             .grid-container {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
-                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
                 gap: 0px 0px;
-                grid-template-areas: "foto1 texto1 foto2 texto2" "texto3 foto3 texto4 foto4" "foto5 texto5 foto6 texto6";
+                grid-template-areas: "foto1 texto1 foto2 texto2" "texto3 foto3 texto4 foto4";
             }
             .foto1 {
                 grid-area: foto1;
@@ -158,20 +158,6 @@ body {
             }
             .foto4 {
                 grid-area: foto4;
-            }
-            .foto5 {
-                grid-area: foto5;
-            }
-            .texto5 {
-                grid-area: texto5;
-                background-color: $color1;
-            }
-            .foto6 {
-                grid-area: foto6;
-            }
-            .texto6 {
-                grid-area: texto6;
-                background-color: $color3;
             }
             .fotos {
                 max-width: 100%;
@@ -242,7 +228,7 @@ body {
         background-color: $color1;
         width: 100vw;
         height: 60px;
-        margin-bottom: 0;
+        bottom: 0;
         position: relative;
         .footer__logo {
             padding: 5px;
