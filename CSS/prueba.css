@@ -43,6 +43,7 @@ h4 {
 
 h5 {
   text-align: center;
+  font-weight: bold;
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
@@ -199,7 +200,7 @@ body main .servicios {
 
 body main .contacto {
   height: 100vh;
-  background: url(../Imagenes/muff.png);
+  background: url(../Imagenes/bas.png);
   background-size: 100vw 100vh;
   background-attachment: fixed;
   margin: 0;
@@ -208,7 +209,7 @@ body main .contacto {
 body main .contacto .formulario {
   width: 450px;
   margin: auto;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(218, 195, 185, 0.4);
   padding: 10px 20px;
   box-sizing: border-box;
   margin-top: 20px;
@@ -229,7 +230,7 @@ body main .contacto form input {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   color: #201F1D;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   padding: 4px;
   box-sizing: border-box;
   border: none;

@@ -50,6 +50,7 @@ h4 {
 
 h5 {
     text-align: center;
+    font-weight: bold;
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
@@ -181,14 +182,14 @@ body {
         }
         .contacto {
             height: 100vh;
-            background: url(../Imagenes/muff.png);
+            background: url(../Imagenes/bas.png);
             background-size: 100vw 100vh;
             background-attachment: fixed;
             margin: 0;
             .formulario {
                 width: 450px;
                 margin: auto;
-                background: rgba(0, 0, 0, 0.4);
+                background: rgba(218, 195, 185, 0.4);
                 padding: 10px 20px;
                 box-sizing: border-box;
                 margin-top: 20px;
@@ -206,7 +207,7 @@ body {
                     font-family: 'Open Sans', sans-serif;
                     font-size: 1rem;
                     color: $color1;
-                    margin-bottom: 15px;
+                    margin-bottom: 10px;
                     padding: 4px;
                     box-sizing: border-box;
                     border: none;
