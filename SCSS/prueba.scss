@@ -69,8 +69,7 @@ p {
 }
 
 body {
-    background: $color4;
-    overflow-x: hidden;
+    background: $color1;
     .container {
         width: 100%;
         margin: auto;
@@ -156,16 +155,24 @@ body {
             }
         }
         .servicios {
-            height: 100vh;
-            width: 100vw;
+            .carousel-inner {
+                padding: 20%;
+            }
+        }
+        .quienesSomos {
+            background-color: $color3;
+            .quienes {
+                margin: 20%;
+            }
         }
         .contacto {
-            height: 75vh;
             background: url(../Imagenes/bas.png);
             background-size: 100vw 100vh;
             background-attachment: fixed;
             margin: 0;
             top: 0;
+            padding-top: 30px;
+            padding-bottom: 100px;
             .formulario {
                 width: 450px;
                 margin: auto;
@@ -218,13 +225,12 @@ body {
         grid-column-gap: 1px;
         background-color: $color1;
         width: 100vw;
-        height: 60px;
+        height: 70px;
         bottom: 0;
-        position: absolute;
+        position: relative;
         .footer__logo {
             padding: 5px;
-            margin: 10px;
-            width: 6%;
+            width: 7%;
             float: center;
         }
         .footer__lista {
@@ -238,46 +244,13 @@ body {
             }
         }
         .redes__link--imagen {
-            width: 15%;
-            height: 15%;
-            margin: 10px 5px;
+            width: 18%;
+            margin: 5px;
         }
     }
-    body {
-        @if $color3==#d3c1a9 {
-            color: $color2;
-        }
-        @else if $color3==#4E2008 {
-            color: #F9F5EA;
-        }
-        @else {
-            color: #af9a7c;
-        }
-    }
-    $animaciones:(imagen1:#4E2008, imagen2:#A23607, imagen3:#af9a7c, );
-    @for $i from 1 to 3 {
-        #productos-#{$i} {
-            box-shadow: 10% + $i;
-        }
-    }
-    @each $animaciones in imagen1,
-    imagen2,
-    imagen3 {
-        img.#{productos} {
-            width: 10%;
+    @media(max-width:480px) {
+        form {
+            width: 100%;
         }
     }
 }
-
-@media(max-width:480px) {
-    form {
-        width: 100%;
-    }
-}
-
-
-/*grid-area: carrusel;
-                    border-radius: 100px 100px 100px 100px;
-                    -webkit-box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
-                    -moz-box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);
-                    box-shadow: 2px 1px 14px 3px rgba(78, 32, 8, 1);*/
