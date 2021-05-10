@@ -172,6 +172,7 @@ body main #productos .fotos:hover {
 
 body #quienesSomos {
   background-color: #DAC3B9 !important;
+  height: 100vh;
 }
 
 body #quienesSomos .grid-container {
@@ -184,12 +185,6 @@ body #quienesSomos .grid-container {
 
 body #quienesSomos .carrusel {
   grid-area: carrusel;
-}
-
-body #quienesSomos .carrusel .carousel-inner .carousel-item {
-  min-height: 50%;
-  max-width: 100%;
-  height: 100%;
 }
 
 body #quienesSomos .historia {

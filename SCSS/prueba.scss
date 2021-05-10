@@ -161,6 +161,7 @@ body {
     }
     #quienesSomos {
         background-color: $color4 !important;
+        height: 100vh;
         .grid-container {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -171,11 +172,7 @@ body {
         .carrusel {
             grid-area: carrusel;
             .carousel-inner {
-                .carousel-item {
-                    min-height: 50%;
-                    max-width: 100%;
-                    height: 100%;
-                }
+                .carousel-item {}
             }
         }
         .historia {
