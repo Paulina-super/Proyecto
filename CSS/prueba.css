@@ -172,10 +172,10 @@ body main #productos .fotos:hover {
 
 body #quienesSomos {
   background-color: #DAC3B9 !important;
-  height: 100vh;
 }
 
 body #quienesSomos .grid-container {
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -187,6 +187,10 @@ body #quienesSomos .carrusel {
   grid-area: carrusel;
 }
 
+body #quienesSomos .carrusel .carousel-inner {
+  height: 100%;
+}
+
 body #quienesSomos .historia {
   grid-area: historia;
   padding: 10%;
@@ -194,6 +198,10 @@ body #quienesSomos .historia {
 
 body #quienesSomos .historia .card {
   border: solid;
+}
+
+body .servicios .card {
+  border: #201F1D;
 }
 
 body .contacto {
