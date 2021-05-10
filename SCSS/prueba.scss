@@ -153,104 +153,114 @@ body {
             .fotos {
                 max-width: 100%;
             }
-        }
-        .servicios {
-            .carousel-inner {
-                padding: 20%;
-            }
-        }
-        .quienesSomos {
-            background-color: $color3;
-            .quienes {
-                margin: 20%;
-            }
-        }
-        .contacto {
-            background: url(../Imagenes/bas.png);
-            background-size: 100vw 100vh;
-            background-attachment: fixed;
-            margin: 0;
-            top: 0;
-            padding-top: 30px;
-            padding-bottom: 100px;
-            .formulario {
-                width: 450px;
-                margin: auto;
-                background: rgba(218, 195, 185, 0.4);
-                padding: 10px 20px;
-                box-sizing: border-box;
-                border-radius: 7px;
-            }
-            form {
-                min-height: 50%;
-                max-height: 100%;
-                max-width: 100%;
-                label,
-                select,
-                textarea,
-                input {
-                    width: 100%;
-                    font-family: 'Open Sans', sans-serif;
-                    font-size: 1rem;
-                    color: $color1;
-                    margin-bottom: 10px;
-                    padding: 4px;
-                    box-sizing: border-box;
-                    border: none;
-                    textarea {
-                        min-height: 100px;
-                        max-height: 200px;
-                        max-width: 100%;
-                    }
-                }
-                #boton {
-                    background-color: $color1;
-                    color: $color4;
-                    padding: 10px;
-                    border: none;
-                    width: 100%;
-                    #boton:hover {
-                        cursor: pointer;
-                    }
-                }
+            .fotos:hover {
+                transform: scale(1.05);
+                transition: transform 0.5s erase-in-out;
             }
         }
     }
-    #carouselExampleFade {
-        z-index: 0;
-    }
-    footer {
-        display: grid;
-        grid-template-columns: 50% 40% 10%;
-        grid-column-gap: 0.063rem;
-        background-color: $color1;
-        width: 100vw;
-        height: 4.375rem;
-        bottom: 0;
-        position: relative;
-        .footer__logo {
-            padding: 0.313rem;
-            width: 7%;
-            float: center;
-        }
-        .footer__lista {
-            list-style: none;
-            margin: 0.063rem;
-            .footer__lista--item {
-                font-family: 'Lato', sans-serif;
-                text-decoration: none;
-                font-size: 1rem;
-                color: $color4;
-            }
-        }
-        .redes__link--imagen {
-            width: 18%;
-            margin: 0.313rem;
+    .servicios {
+        .carousel-inner {
+            padding: 20%;
         }
     }
-    @media(max-width:480px) {
+    .quienesSomos {
+        background-color: $color3;
+        .quienes {
+            margin: 20%;
+        }
+    }
+    .contacto {
+        background: url(../Imagenes/bas.png);
+        background-size: 100vw 100vh;
+        background-attachment: fixed;
+        margin: 0;
+        top: 0;
+        padding-top: 30px;
+        padding-bottom: 100px;
+        .formulario {
+            width: 450px;
+            margin: auto;
+            background: rgba(218, 195, 185, 0.4);
+            padding: 10px 20px;
+            box-sizing: border-box;
+            border-radius: 7px;
+        }
         form {
-            width: 100%;
+            min-height: 50%;
+            max-height: 100%;
+            max-width: 100%;
+            label,
+            select,
+            textarea,
+            input {
+                width: 100%;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1rem;
+                color: $color1;
+                margin-bottom: 10px;
+                padding: 4px;
+                box-sizing: border-box;
+                border: none;
+                textarea {
+                    min-height: 100px;
+                    max-height: 200px;
+                    max-width: 100%;
+                }
+            }
+            #boton {
+                background-color: $color1;
+                color: $color4;
+                padding: 10px;
+                border: none;
+                width: 100%;
+                #boton:hover {
+                    cursor: pointer;
+                }
+            }
         }
     }
+}
+
+#carouselExampleFade {
+    z-index: 0;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 50% 40% 10%;
+    grid-column-gap: 0.063rem;
+    background-color: $color1;
+    width: 100vw;
+    height: 4.375rem;
+    bottom: 0;
+    position: relative;
+    .footer__logo {
+        padding: 0.313rem;
+        width: 7%;
+        float: center;
+    }
+    .footer__lista {
+        list-style: none;
+        margin: 0.063rem;
+        .footer__lista--item {
+            font-family: 'Lato', sans-serif;
+            text-decoration: none;
+            font-size: 1rem;
+            color: $color4;
+        }
+    }
+    .redes__link--imagen {
+        width: 18%;
+        margin: 0.313rem;
+    }
+}
+
+@media(max-width:480px) {
+    form {
+        width: 100%;
+    }
+}
+
+
 }
