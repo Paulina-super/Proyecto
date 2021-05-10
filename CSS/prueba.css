@@ -114,12 +114,6 @@ body .home .home__video {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
-}
-
-body .home .home__video .home__video video {
-  min-width: 100%;
-  min-height: 100%;
 }
 
 body .home .home__titulo {
@@ -196,7 +190,6 @@ body main .contacto .formulario {
   background: rgba(218, 195, 185, 0.4);
   padding: 10px 20px;
   box-sizing: border-box;
-  margin-top: 20px;
   border-radius: 7px;
 }
 
@@ -253,7 +246,7 @@ body footer {
   width: 100vw;
   height: 60px;
   bottom: 0;
-  position: relative;
+  position: absolute;
 }
 
 body footer .footer__logo {
