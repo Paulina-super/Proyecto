@@ -159,16 +159,28 @@ body {
             }
         }
     }
-    .servicios {
-        .carousel-inner {
-            padding: 20%;
-        }
-    }
     #quienesSomos {
-        background-color: $color3, !important;
-        .carouselExampleIndicators {
-            padding: 20%;
-            margin: 50%;
+        background-color: $color4 !important;
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 0px 0px;
+            grid-template-areas: "carrusel carrusel historia historia" "carrusel carrusel historia historia";
+        }
+        .carrusel {
+            grid-area: carrusel;
+            .carousel-inner {
+                .carousel-item {
+                    min-height: 50%;
+                    max-height: 100%;
+                    max-width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .historia {
+            grid-area: historia;
         }
     }
     .contacto {

@@ -170,17 +170,31 @@ body main #productos .fotos:hover {
   transition: transform 0.5s erase-in-out;
 }
 
-body .servicios .carousel-inner {
-  padding: 20%;
-}
-
 body #quienesSomos {
-  background-color: #B36568, !important;
+  background-color: #DAC3B9 !important;
 }
 
-body #quienesSomos .carouselExampleIndicators {
-  padding: 20%;
-  margin: 50%;
+body #quienesSomos .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "carrusel carrusel historia historia" "carrusel carrusel historia historia";
+}
+
+body #quienesSomos .carrusel {
+  grid-area: carrusel;
+}
+
+body #quienesSomos .carrusel .carousel-inner .carousel-item {
+  min-height: 50%;
+  max-height: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+body #quienesSomos .historia {
+  grid-area: historia;
 }
 
 body .contacto {
