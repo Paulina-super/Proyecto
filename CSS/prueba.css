@@ -63,18 +63,19 @@ p {
 
 body {
   background: #DAC3B9;
+  overflow-x: hidden;
 }
 
 body .container {
   width: 100%;
-  margin: 0;
+  margin: auto;
   padding: 0;
 }
 
 body header {
   background-color: #201F1D;
   width: 100vw;
-  height: 10%;
+  height: 5%;
   position: relative;
   top: 0;
   z-index: 1;
@@ -199,11 +200,12 @@ body main .servicios {
 }
 
 body main .contacto {
-  height: 100vh;
+  height: 75vh;
   background: url(../Imagenes/bas.png);
   background-size: 100vw 100vh;
   background-attachment: fixed;
   margin: 0;
+  top: 0;
 }
 
 body main .contacto .formulario {
@@ -268,7 +270,7 @@ body footer {
   background-color: #201F1D;
   width: 100vw;
   height: 60px;
-  bottom: 0;
+  margin-bottom: 0;
   position: relative;
 }
 
