@@ -53,7 +53,7 @@ p {
     width: 100%;
     min-width: 50%;
     max-width: 90%;
-    padding: 10%;
+    padding: auto;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
@@ -63,7 +63,7 @@ p {
 body {
     background: $color1;
     .contenedor {
-        width: 100%;
+        max-width: 100%;
         margin: auto;
         padding: 0;
     }
@@ -118,6 +118,7 @@ body {
                 grid-area: foto1;
             }
             .texto1 {
+                padding: 10%;
                 grid-area: texto1;
                 background-color: $color4;
             }
@@ -125,10 +126,12 @@ body {
                 grid-area: foto2;
             }
             .texto2 {
+                padding: 10%;
                 grid-area: texto2;
                 background-color: $color2;
             }
             .texto3 {
+                padding: 10%;
                 grid-area: texto3;
                 background-color: $color3;
             }
@@ -136,6 +139,7 @@ body {
                 grid-area: foto3;
             }
             .texto4 {
+                padding: 10%;
                 grid-area: texto4;
                 background-color: $color5;
             }
@@ -145,6 +149,8 @@ body {
             .fotos {
                 max-width: 100%;
                 min-width: 100%;
+                max-height: 100%;
+                min-height: 100%;
             }
             .fotos:hover {
                 transform: scale(1.08);
