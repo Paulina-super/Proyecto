@@ -261,18 +261,18 @@ body .contacto form #boton #boton:hover {
 body footer {
   display: grid;
   grid-template-columns: 50% 40% 10%;
-  grid-column-gap: 0.063rem;
+  grid-template-rows: 1.5rem;
   background-color: #201F1D;
   width: 100vw;
-  height: 4.375rem;
+  height: 10%;
   bottom: 0;
   position: relative;
 }
 
 body footer .img-fluid {
   float: center;
-  margin: 2%;
-  height: 3%;
+  padding: 1%;
+  height: 3rem;
 }
 
 body footer .footer__lista {
@@ -295,9 +295,5 @@ body footer .redes__link--imagen {
 @media (max-width: 480px) {
   form {
     width: 100%;
-  }
-  footer .footer__logo {
-    width: 20%;
-    float: center;
   }
 }
