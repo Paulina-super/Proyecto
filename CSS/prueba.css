@@ -307,4 +307,8 @@ body footer .redes__link--imagen {
   form {
     width: 100%;
   }
+  footer .footer__logo {
+    width: 20%;
+    float: center;
+  }
 }

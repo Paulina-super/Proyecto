@@ -1,280 +1,286 @@
-$color1:#201F1D;
-$color2:#982539;
-$color3:#B36568;
-$color4:#DAC3B9;
-$color5:#CEA597;
-$ftexto:'Roboto',
-sans-serif;
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-h1 {
-    font-weight: bold;
-    text-align: center;
-    font-family: 'Allura', cursive;
-    font-size: 2rem;
-    color: $color3;
-    padding: 4px;
-}
-
-h2 {
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-size: 1rem;
-    color: $color3;
-}
-
-h3 {
-    font-weight: bold;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: $color1;
-}
-
-h4 {
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    color: $color2;
-}
-
-p {
-    width: 100%;
-    min-width: 50%;
-    max-width: 90%;
-    padding: auto;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    color: $color1;
-}
-
-body {
-    background: $color1;
-    .contenedor {
-        max-width: 100%;
-        margin: auto;
+    $color1:#201F1D;
+    $color2:#982539;
+    $color3:#B36568;
+    $color4:#DAC3B9;
+    $color5:#CEA597;
+    $ftexto:'Roboto',
+    sans-serif;
+    * {
+        margin: 0;
         padding: 0;
+        box-sizing: border-box;
     }
-    header {
-        background-color: $color1;
-        width: 100vw;
-        height: 5%;
-        position: relative;
-        top: 0;
-        z-index: 2;
-        .menu {
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    h1 {
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Allura', cursive;
+        font-size: 2rem;
+        color: $color3;
+        padding: 4px;
+    }
+    
+    h2 {
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        color: $color3;
+    }
+    
+    h3 {
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: $color1;
+    }
+    
+    h4 {
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        color: $color2;
+    }
+    
+    p {
+        width: 100%;
+        min-width: 50%;
+        max-width: 90%;
+        padding: auto;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        color: $color1;
+    }
+    
+    body {
+        background: $color1;
+        .contenedor {
+            max-width: 100%;
+            margin: auto;
+            padding: 0;
+        }
+        header {
+            background-color: $color1;
+            width: 100vw;
+            height: 5%;
+            position: relative;
+            top: 0;
             z-index: 2;
-            .navbar-nav {
-                background-color: $color1;
-                a {
+            .menu {
+                z-index: 2;
+                .navbar-nav {
                     background-color: $color1;
-                    color: $color4;
-                }
-                a:hover {
-                    background-color: $color3;
-                    cursor: pointer;
+                    a {
+                        background-color: $color1;
+                        color: $color4;
+                    }
+                    a:hover {
+                        background-color: $color3;
+                        cursor: pointer;
+                    }
                 }
             }
         }
-    }
-    .home {
-        display: flex;
-        align-items: center;
-        .home__video {
-            position: relative;
-            z-index: 0;
-            top: 0;
-            left: 0;
-            width: 100%;
+        .home {
+            display: flex;
+            align-items: center;
+            .home__video {
+                position: relative;
+                z-index: 0;
+                top: 0;
+                left: 0;
+                width: 100%;
+            }
+            .home__titulo {
+                margin: 10% 30%;
+                z-index: 1;
+                text-align: center;
+            }
         }
-        .home__titulo {
-            margin: 10% 30%;
-            z-index: 1;
-            text-align: center;
+        main {
+            #productos {
+                .grid-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    gap: 0px 0px;
+                    grid-template-areas: "foto1 texto1 foto2 texto2" "texto3 foto3 texto4 foto4";
+                }
+                .foto1 {
+                    grid-area: foto1;
+                }
+                .texto1 {
+                    padding: 10%;
+                    grid-area: texto1;
+                    background-color: $color4;
+                }
+                .foto2 {
+                    grid-area: foto2;
+                }
+                .texto2 {
+                    padding: 10%;
+                    grid-area: texto2;
+                    background-color: $color2;
+                }
+                .texto3 {
+                    padding: 10%;
+                    grid-area: texto3;
+                    background-color: $color3;
+                }
+                .foto3 {
+                    grid-area: foto3;
+                }
+                .texto4 {
+                    padding: 10%;
+                    grid-area: texto4;
+                    background-color: $color5;
+                }
+                .foto4 {
+                    grid-area: foto4;
+                }
+                .fotos {
+                    max-width: 100%;
+                    min-width: 100%;
+                    max-height: 100%;
+                    min-height: 100%;
+                }
+                .fotos:hover {
+                    transform: scale(1.08);
+                    transition: transform 0.5s erase-in-out;
+                }
+            }
         }
-    }
-    main {
-        #productos {
+        #quienesSomos {
+            background-color: $color4 !important;
             .grid-container {
+                height: 100%;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
-                grid-template-rows: 1fr 1fr;
+                grid-template-rows: 0.5fr 0.5fr;
                 gap: 0px 0px;
-                grid-template-areas: "foto1 texto1 foto2 texto2" "texto3 foto3 texto4 foto4";
+                grid-template-areas: "carrusel carrusel carrusel carrusel" "historia historia historia historia";
             }
-            .foto1 {
-                grid-area: foto1;
+            .carrusel {
+                grid-area: carrusel;
+                .carousel-inner {
+                    height: 100%;
+                }
             }
-            .texto1 {
+            .historia {
+                grid-area: historia;
                 padding: 10%;
-                grid-area: texto1;
-                background-color: $color4;
-            }
-            .foto2 {
-                grid-area: foto2;
-            }
-            .texto2 {
-                padding: 10%;
-                grid-area: texto2;
-                background-color: $color2;
-            }
-            .texto3 {
-                padding: 10%;
-                grid-area: texto3;
-                background-color: $color3;
-            }
-            .foto3 {
-                grid-area: foto3;
-            }
-            .texto4 {
-                padding: 10%;
-                grid-area: texto4;
-                background-color: $color5;
-            }
-            .foto4 {
-                grid-area: foto4;
-            }
-            .fotos {
-                max-width: 100%;
-                min-width: 100%;
-                max-height: 100%;
-                min-height: 100%;
-            }
-            .fotos:hover {
-                transform: scale(1.08);
-                transition: transform 0.5s erase-in-out;
+                .card {
+                    border: solid;
+                    .card-text {
+                        font-size: 1rem;
+                        padding: 2%;
+                        margin: 0!important;
+                    }
+                }
             }
         }
-    }
-    #quienesSomos {
-        background-color: $color4 !important;
-        .grid-container {
-            height: 100%;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 0.5fr 0.5fr;
-            gap: 0px 0px;
-            grid-template-areas: "carrusel carrusel carrusel carrusel" "historia historia historia historia";
-        }
-        .carrusel {
-            grid-area: carrusel;
-            .carousel-inner {
-                height: 100%;
-            }
-        }
-        .historia {
-            grid-area: historia;
-            padding: 10%;
+        .servicios {
             .card {
-                border: solid;
-                .card-text {
-                    font-size: 1rem;
-                    padding: 2%;
-                    margin: 0!important;
-                }
+                border: $color1;
             }
         }
-    }
-    .servicios {
-        .card {
-            border: $color1;
-        }
-    }
-    .contacto {
-        background: url(../Imagenes/bas.png);
-        background-size: 100vw 100vh;
-        background-attachment: fixed;
-        margin: 0;
-        top: 0;
-        padding-top: 30px;
-        padding-bottom: 100px;
-        .formulario {
-            width: 480px;
-            margin: auto;
-            background: rgba(218, 195, 185, 0.4);
-            padding: 10px 20px;
-            box-sizing: border-box;
-            border-radius: 7px;
-        }
-        form {
-            min-height: 50%;
-            max-height: 100%;
-            max-width: 100%;
-            label,
-            select,
-            textarea,
-            input {
-                width: 100%;
-                font-family: 'Open Sans', sans-serif;
-                font-size: 1rem;
-                color: $color1;
-                margin-bottom: 10px;
-                padding: 4px;
+        .contacto {
+            background: url(../Imagenes/bas.png);
+            background-size: 100vw 100vh;
+            background-attachment: fixed;
+            margin: 0;
+            top: 0;
+            padding-top: 30px;
+            padding-bottom: 100px;
+            .formulario {
+                width: 480px;
+                margin: auto;
+                background: rgba(218, 195, 185, 0.4);
+                padding: 10px 20px;
                 box-sizing: border-box;
-                border: none;
-                textarea {
-                    min-height: 100px;
-                    max-height: 200px;
-                    max-width: 100%;
+                border-radius: 7px;
+            }
+            form {
+                min-height: 50%;
+                max-height: 100%;
+                max-width: 100%;
+                label,
+                select,
+                textarea,
+                input {
+                    width: 100%;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 1rem;
+                    color: $color1;
+                    margin-bottom: 10px;
+                    padding: 4px;
+                    box-sizing: border-box;
+                    border: none;
+                    textarea {
+                        min-height: 100px;
+                        max-height: 200px;
+                        max-width: 100%;
+                    }
+                }
+                #boton {
+                    background-color: $color1;
+                    color: $color4;
+                    padding: 10px;
+                    border: none;
+                    width: 100%;
+                    #boton:hover {
+                        cursor: pointer;
+                    }
                 }
             }
-            #boton {
-                background-color: $color1;
-                color: $color4;
-                padding: 10px;
-                border: none;
-                width: 100%;
-                #boton:hover {
-                    cursor: pointer;
+        }
+        footer {
+            display: grid;
+            grid-template-columns: 50% 40% 10%;
+            grid-column-gap: 0.063rem;
+            background-color: $color1;
+            width: 100vw;
+            height: 4.375rem;
+            bottom: 0;
+            position: relative;
+            .footer__logo {
+                padding: 0.313rem;
+                width: 7%;
+                float: center;
+            }
+            .footer__lista {
+                list-style: none;
+                margin: 0.063rem;
+                .footer__lista--item {
+                    font-family: 'Lato', sans-serif;
+                    text-decoration: none;
+                    font-size: 1rem;
+                    color: $color4;
                 }
             }
-        }
-    }
-    footer {
-        display: grid;
-        grid-template-columns: 50% 40% 10%;
-        grid-column-gap: 0.063rem;
-        background-color: $color1;
-        width: 100vw;
-        height: 4.375rem;
-        bottom: 0;
-        position: relative;
-        .footer__logo {
-            padding: 0.313rem;
-            width: 7%;
-            float: center;
-        }
-        .footer__lista {
-            list-style: none;
-            margin: 0.063rem;
-            .footer__lista--item {
-                font-family: 'Lato', sans-serif;
-                text-decoration: none;
-                font-size: 1rem;
-                color: $color4;
+            .redes__link--imagen {
+                width: 18%;
+                margin: 0.313rem;
             }
         }
-        .redes__link--imagen {
-            width: 18%;
-            margin: 0.313rem;
+    }
+    
+    @media(max-width:480px) {
+        form {
+            width: 100%;
+        }
+        footer {
+            .footer__logo {
+                width: 20%;
+                float: center;
+            }
         }
     }
-}
-
-@media(max-width:480px) {
-    form {
-        width: 100%;
-    }
-}
