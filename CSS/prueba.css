@@ -57,7 +57,7 @@ body {
   background: #201F1D;
 }
 
-body .container {
+body .contenedor {
   width: 100%;
   margin: auto;
   padding: 0;
@@ -155,10 +155,11 @@ body main #productos .foto4 {
 
 body main #productos .fotos {
   max-width: 100%;
+  min-width: 100%;
 }
 
 body main #productos .fotos:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
   transition: transform 0.5s erase-in-out;
 }
 
@@ -170,9 +171,9 @@ body #quienesSomos .grid-container {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
   gap: 0px 0px;
-  grid-template-areas: "carrusel carrusel historia historia" "carrusel carrusel historia historia" "carrusel carrusel historia historia";
+  grid-template-areas: "carrusel carrusel carrusel carrusel" "historia historia historia historia";
 }
 
 body #quienesSomos .carrusel {
@@ -192,6 +193,12 @@ body #quienesSomos .historia .card {
   border: solid;
 }
 
+body #quienesSomos .historia .card .card-text {
+  font-size: 1rem;
+  padding: 2%;
+  margin: 0 !important;
+}
+
 body .servicios .card {
   border: #201F1D;
 }
@@ -207,7 +214,7 @@ body .contacto {
 }
 
 body .contacto .formulario {
-  width: 450px;
+  width: 480px;
   margin: auto;
   background: rgba(218, 195, 185, 0.4);
   padding: 10px 20px;

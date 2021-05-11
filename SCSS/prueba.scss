@@ -62,7 +62,7 @@ p {
 
 body {
     background: $color1;
-    .container {
+    .contenedor {
         width: 100%;
         margin: auto;
         padding: 0;
@@ -144,9 +144,10 @@ body {
             }
             .fotos {
                 max-width: 100%;
+                min-width: 100%;
             }
             .fotos:hover {
-                transform: scale(1.05);
+                transform: scale(1.08);
                 transition: transform 0.5s erase-in-out;
             }
         }
@@ -157,9 +158,9 @@ body {
             height: 100%;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-rows: 0.5fr 0.5fr;
             gap: 0px 0px;
-            grid-template-areas: "carrusel carrusel historia historia" "carrusel carrusel historia historia" "carrusel carrusel historia historia";
+            grid-template-areas: "carrusel carrusel carrusel carrusel" "historia historia historia historia";
         }
         .carrusel {
             grid-area: carrusel;
@@ -172,6 +173,11 @@ body {
             padding: 10%;
             .card {
                 border: solid;
+                .card-text {
+                    font-size: 1rem;
+                    padding: 2%;
+                    margin: 0!important;
+                }
             }
         }
     }
@@ -189,7 +195,7 @@ body {
         padding-top: 30px;
         padding-bottom: 100px;
         .formulario {
-            width: 450px;
+            width: 480px;
             margin: auto;
             background: rgba(218, 195, 185, 0.4);
             padding: 10px 20px;
