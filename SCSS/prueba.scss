@@ -62,11 +62,6 @@
     
     body {
         background: $color1;
-        .contenedor {
-            max-width: 100%;
-            margin: auto;
-            padding: 0;
-        }
         header {
             background-color: $color1;
             width: 100vw;
@@ -151,10 +146,6 @@
                     min-width: 100%;
                     max-height: 100%;
                     min-height: 100%;
-                }
-                .fotos:hover {
-                    transform: scale(1.08);
-                    transition: transform 0.5s erase-in-out;
                 }
             }
         }
@@ -251,10 +242,10 @@
             height: 4.375rem;
             bottom: 0;
             position: relative;
-            .footer__logo {
-                padding: 0.313rem;
-                width: 7%;
+            .img-fluid {
                 float: center;
+                margin: 2%;
+                height: 3%;
             }
             .footer__lista {
                 list-style: none;

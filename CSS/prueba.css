@@ -57,12 +57,6 @@ body {
   background: #201F1D;
 }
 
-body .contenedor {
-  max-width: 100%;
-  margin: auto;
-  padding: 0;
-}
-
 body header {
   background-color: #201F1D;
   width: 100vw;
@@ -162,11 +156,6 @@ body main #productos .fotos {
   min-width: 100%;
   max-height: 100%;
   min-height: 100%;
-}
-
-body main #productos .fotos:hover {
-  transform: scale(1.08);
-  transition: transform 0.5s erase-in-out;
 }
 
 body #quienesSomos {
@@ -280,10 +269,10 @@ body footer {
   position: relative;
 }
 
-body footer .footer__logo {
-  padding: 0.313rem;
-  width: 7%;
+body footer .img-fluid {
   float: center;
+  margin: 2%;
+  height: 3%;
 }
 
 body footer .footer__lista {
