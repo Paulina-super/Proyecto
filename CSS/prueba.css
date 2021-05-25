@@ -103,6 +103,10 @@ body main .home .home__titulo {
   text-align: center;
 }
 
+body main #productos {
+  padding: 4rem;
+}
+
 body main #productos .grid-container {
   justify-content: space-evenly;
   align-content: stretch;
@@ -121,7 +125,7 @@ body main #productos .foto1 {
 body main #productos .texto1 {
   padding: 10%;
   grid-area: texto1;
-  background-color: #DAC3B9;
+  background-color: #B36568;
 }
 
 body main #productos .foto2 {
@@ -131,13 +135,13 @@ body main #productos .foto2 {
 body main #productos .texto2 {
   padding: 10%;
   grid-area: texto2;
-  background-color: #982539;
+  background-color: #CEA597;
 }
 
 body main #productos .texto3 {
   padding: 10%;
   grid-area: texto3;
-  background-color: #B36568;
+  background-color: #CEA597;
 }
 
 body main #productos .foto3 {
@@ -147,7 +151,7 @@ body main #productos .foto3 {
 body main #productos .texto4 {
   padding: 10%;
   grid-area: texto4;
-  background-color: #CEA597;
+  background-color: #982539;
 }
 
 body main #productos .foto4 {
@@ -198,7 +202,7 @@ body main #quienesSomos .historia .card .card-text {
 }
 
 body main .servicios {
-  padding: 1rem;
+  padding: 4rem;
 }
 
 body main .servicios .card {

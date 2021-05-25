@@ -102,6 +102,7 @@ body {
             }
         }
         #productos {
+            padding: 4rem;
             .grid-container {
                 justify-content: space-evenly;
                 align-content: stretch;
@@ -118,7 +119,7 @@ body {
             .texto1 {
                 padding: 10%;
                 grid-area: texto1;
-                background-color: $color4;
+                background-color: $color3;
             }
             .foto2 {
                 grid-area: foto2;
@@ -126,12 +127,12 @@ body {
             .texto2 {
                 padding: 10%;
                 grid-area: texto2;
-                background-color: $color2;
+                background-color: $color5;
             }
             .texto3 {
                 padding: 10%;
                 grid-area: texto3;
-                background-color: $color3;
+                background-color: $color5;
             }
             .foto3 {
                 grid-area: foto3;
@@ -139,7 +140,7 @@ body {
             .texto4 {
                 padding: 10%;
                 grid-area: texto4;
-                background-color: $color5;
+                background-color: $color2;
             }
             .foto4 {
                 grid-area: foto4;
@@ -181,7 +182,7 @@ body {
             }
         }
         .servicios {
-            padding: 1rem;
+            padding: 4rem;
             .card {
                 border: $color1;
             }
