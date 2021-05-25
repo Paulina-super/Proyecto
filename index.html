@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Pour Tout Le Monde Pâtisserie</title>
     <meta name="description" content="Pasteleria y reposteria profesional Argentina para todo el mundo">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/prueba.css" />
     <link rel="icon" href="Imagenes/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Lato&family=Montserrat&family=Open+Sans&family=Playball&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
@@ -39,11 +39,174 @@
             </nav>
         </div>
     </header>
+    <main>
+        <!-- HOME CON VIDEO-->
+        <section class="home">
+            <video class="home__video" src="Imagenes/Video.mp4" alt="Video de hotcakes" muted autoplay loop></video>
+        </section>
 
-    <!-- HOME CON VIDEO-->
-    <div class="home">
-        <video class="home__video" src="Imagenes/Video.mp4" alt="Video de hotcakes" muted autoplay loop></video>
-    </div>
+        <!-- PRODUCTOS CON GRID-->
+
+        <section id="productos">
+            <div class="grid-container">
+
+                <div class="foto1"><img class="fotos" src="Imagenes/croissant.png" alt="">
+                </div>
+                <div class="texto1">
+                    <h3>Croissants y Panificados</h3>
+                    <p>Croissants y facturas de grasa o manteca. Cookies y bizcochos. Con o sin relleno. Glaseadas o bañadas en chocolate. Panes y galletas saborizados o integrales.</p>
+                </div>
+                <div class="foto2">
+                    <img class="fotos" src="Imagenes/muffin.png" alt="">
+                </div>
+
+                <div class="texto2">
+                    <h3>Muffins y Budines</h3>
+                    <p>Muffins y budines de vainilla, chocolate, limón o mixtos. Con frutas o chips de chocolate. Cubiertas de chocolate, glaseado, crema o decoración personalizada.</p>
+                </div>
+                <div class="texto3">
+                    <h3>Tortas y Bizcochuelos</h3>
+                    <p>Tortas rellenas con mousse, dulce de leche o crema. Bizcochuelos de chocolate, vainilla, limón o mixtos. Cubiertas de chocolate blanco o negro, mousse, o decoración personalizada.</p>
+                </div>
+                <div class="foto3">
+                    <img class="fotos" src="Imagenes/tortam.png" alt="Torta de Mousse de Chocolate">
+                </div>
+
+                <div class="texto4">
+                    <h3>Pies y Tartas Frutales</h3>
+                    <p>Tartas frutales con base crocante de diferentes sabores. Rellenos de crema pastelera o mousse. Cubiertas con frutas de estación o merengue. Decoradas con copos.</p>
+
+                </div>
+                <div class="foto4">
+                    <img class="fotos" src="Imagenes/pie.png" alt="Tarta Frutal">
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- QUIENES SOMOS CARRUSEL Y CARD -->
+
+        <section id="quienesSomos">
+            <div class="grid-container">
+                <div class="carrusel">
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="Imagenes/car1.png" class="d-block w-100" alt="Pasteleros">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="Imagenes/car2.png" class="d-block w-100" alt="Pastelería">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Imagenes/car3.png" class="d-block w-100" alt="Insumos de pastelería">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- CARD -->
+
+                <div class="historia">
+                    <div class="quienes">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Quienes Somos</h3>
+                                <p class="card-text">Este emprendimiento surge en el año 1945 cuando Jean Bruni y su familia, provenientes de Roussillion (Francia), se establecieron en la ciudad de Buenos Aires. Con una tradición en la pastelería artesanal transmitida a lo
+                                    largo de tres generaciones, los productos y servicios que ofrece Pour Tout Le Monde, llevan su sello distintivo de calidad y sabores únicos. A través de nuestro icónico local ubicado en el barrio de San Martin, podés
+                                    disfrutar de las especialidades en pastelería artesanal que la familia Bruni ha sabido cultivar a lo largo de los años y que se enorgullece en compartir.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- seccion SERVICIOS con cards y fotos -->
+        <section class="servicios">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="Imagenes/serv1.png" class="card-img-top" alt="Mesa Dulce">
+                        <div class="card-body">
+                            <h3>Catering</h3>
+                            <p>Catering y mesas dulces para fiestas, cumpleaños y eventos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="Imagenes/serv2.png" class="card-img-top" alt="Café">
+                        <div class="card-body">
+                            <h3>Café y pastelería</h3>
+                            <p>Disfrutá de nuestros desayunos y meriendas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="Imagenes/serv3.png" class="card-img-top" alt="Delivery">
+                        <div class="card-body">
+                            <h3>Delivery</h3>
+                            <p>Entregas de pedidos sin cargo dentro de AMBA.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- formulario con foto de fondo -->
+        <section class="contacto">
+
+            <div class="formulario">
+
+                <form>
+                    <h3>Contacto</h3>
+                    <!-- info de contacto -->
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" name="Nombre" placeholder="Nombre y Apellido" value=" ">
+                    <br>
+                    <label for="nombre">Teléfono</label>
+                    <input type="phone" name="Teléfono" placeholder="Teléfono" value=" ">
+                    <br>
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" placeholder="xxxxxxxx@xxxx.com" value=" " required>
+                    <br>
+
+                    <!-- detalles de consulta -->
+
+                    <h4>Dejanos tu consulta</h4>
+                    <select>
+                    <option>Servicios</option>
+                    <option>Productos</option>
+                    <option>Otros</option>
+                </select>
+
+                    <textarea rows="4" cols="50" name="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
+
+                    <!-- botones -->
+
+                    <input type="submit" value="Enviar formulario" id="boton">
+                    <input type="reset" value="Limpiar formulario" id="boton">
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+
 
     <!-- FOOTER con logo, tecto y enlaces-->
     <footer>
@@ -66,9 +229,8 @@
 
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 </body>
 
 </html>

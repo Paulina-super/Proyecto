@@ -54,7 +54,7 @@ p {
 }
 
 body {
-  background: #201F1D;
+  background: #DAC3B9;
 }
 
 body header {
@@ -84,12 +84,12 @@ body header .menu .navbar-nav a:hover {
   cursor: pointer;
 }
 
-body .home {
+body main .home {
   display: flex;
   align-items: center;
 }
 
-body .home .home__video {
+body main .home .home__video {
   position: relative;
   z-index: 0;
   top: 0;
@@ -97,13 +97,15 @@ body .home .home__video {
   width: 100%;
 }
 
-body .home .home__titulo {
+body main .home .home__titulo {
   margin: 10% 30%;
   z-index: 1;
   text-align: center;
 }
 
 body main #productos .grid-container {
+  justify-content: space-evenly;
+  align-content: stretch;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -112,6 +114,7 @@ body main #productos .grid-container {
 }
 
 body main #productos .foto1 {
+  align-content: stretch;
   grid-area: foto1;
 }
 
@@ -158,11 +161,11 @@ body main #productos .fotos {
   min-height: 100%;
 }
 
-body #quienesSomos {
+body main #quienesSomos {
   background-color: #DAC3B9 !important;
 }
 
-body #quienesSomos .grid-container {
+body main #quienesSomos .grid-container {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -171,34 +174,38 @@ body #quienesSomos .grid-container {
   grid-template-areas: "carrusel carrusel carrusel carrusel" "historia historia historia historia";
 }
 
-body #quienesSomos .carrusel {
+body main #quienesSomos .carrusel {
   grid-area: carrusel;
 }
 
-body #quienesSomos .carrusel .carousel-inner {
+body main #quienesSomos .carrusel .carousel-inner {
   height: 100%;
 }
 
-body #quienesSomos .historia {
+body main #quienesSomos .historia {
   grid-area: historia;
   padding: 10%;
 }
 
-body #quienesSomos .historia .card {
+body main #quienesSomos .historia .card {
   border: solid;
 }
 
-body #quienesSomos .historia .card .card-text {
+body main #quienesSomos .historia .card .card-text {
   font-size: 1rem;
   padding: 2%;
   margin: 0 !important;
 }
 
-body .servicios .card {
+body main .servicios {
+  padding: 1rem;
+}
+
+body main .servicios .card {
   border: #201F1D;
 }
 
-body .contacto {
+body main .contacto {
   background: url(../Imagenes/bas.png);
   background-size: 100vw 100vh;
   background-attachment: fixed;
@@ -208,7 +215,7 @@ body .contacto {
   padding-bottom: 100px;
 }
 
-body .contacto .formulario {
+body main .contacto .formulario {
   width: 480px;
   margin: auto;
   background: rgba(218, 195, 185, 0.4);
@@ -217,16 +224,16 @@ body .contacto .formulario {
   border-radius: 7px;
 }
 
-body .contacto form {
+body main .contacto form {
   min-height: 50%;
   max-height: 100%;
   max-width: 100%;
 }
 
-body .contacto form label,
-body .contacto form select,
-body .contacto form textarea,
-body .contacto form input {
+body main .contacto form label,
+body main .contacto form select,
+body main .contacto form textarea,
+body main .contacto form input {
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
@@ -237,16 +244,16 @@ body .contacto form input {
   border: none;
 }
 
-body .contacto form label textarea,
-body .contacto form select textarea,
-body .contacto form textarea textarea,
-body .contacto form input textarea {
+body main .contacto form label textarea,
+body main .contacto form select textarea,
+body main .contacto form textarea textarea,
+body main .contacto form input textarea {
   min-height: 100px;
   max-height: 200px;
   max-width: 100%;
 }
 
-body .contacto form #boton {
+body main .contacto form #boton {
   background-color: #201F1D;
   color: #DAC3B9;
   padding: 10px;
@@ -254,7 +261,7 @@ body .contacto form #boton {
   width: 100%;
 }
 
-body .contacto form #boton #boton:hover {
+body main .contacto form #boton #boton:hover {
   cursor: pointer;
 }
 
@@ -264,7 +271,7 @@ body footer {
   grid-template-rows: 1.5rem;
   background-color: #201F1D;
   width: 100vw;
-  height: 10%;
+  height: 3rem;
   bottom: 0;
   position: relative;
 }
@@ -297,3 +304,4 @@ body footer .redes__link--imagen {
     width: 100%;
   }
 }
+/*# sourceMappingURL=prueba.css.map */
