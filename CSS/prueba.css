@@ -196,7 +196,7 @@ body main #quienesSomos .historia .card {
 }
 
 body main #quienesSomos .historia .card .card-text {
-  font-size: 1rem;
+  font-size: 3rem;
   padding: 2%;
   margin: 0 !important;
 }
