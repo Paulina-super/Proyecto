@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -84,12 +85,16 @@ body header .menu .navbar-nav a:hover {
   cursor: pointer;
 }
 
-body main .home {
+body main #index {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body main .home .home__video {
+body main #index .home__video {
   position: relative;
   z-index: 0;
   top: 0;
@@ -97,7 +102,7 @@ body main .home .home__video {
   width: 100%;
 }
 
-body main .home .home__titulo {
+body main #index .home__titulo {
   margin: 10% 30%;
   z-index: 1;
   text-align: center;
@@ -108,53 +113,76 @@ body main #productos {
 }
 
 body main #productos .grid-container {
-  justify-content: space-evenly;
-  align-content: stretch;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
-  grid-template-areas: "foto1 texto1 foto2 texto2" "texto3 foto3 texto4 foto4";
+      grid-template-areas: "foto1 texto1 foto2 texto2" "texto3 foto3 texto4 foto4";
 }
 
 body main #productos .foto1 {
-  align-content: stretch;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: foto1;
 }
 
 body main #productos .texto1 {
   padding: 10%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: texto1;
   background-color: #B36568;
 }
 
 body main #productos .foto2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: foto2;
 }
 
 body main #productos .texto2 {
   padding: 10%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
   grid-area: texto2;
   background-color: #CEA597;
 }
 
 body main #productos .texto3 {
   padding: 10%;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: texto3;
   background-color: #CEA597;
 }
 
 body main #productos .foto3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: foto3;
 }
 
 body main #productos .texto4 {
   padding: 10%;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: texto4;
   background-color: #982539;
 }
 
 body main #productos .foto4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
   grid-area: foto4;
 }
 
@@ -171,14 +199,20 @@ body main #quienesSomos {
 
 body main #quienesSomos .grid-container {
   height: 100%;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 0.5fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 0.5fr 0.5fr;
+      grid-template-rows: 0.5fr 0.5fr;
   gap: 0px 0px;
-  grid-template-areas: "carrusel carrusel carrusel carrusel" "historia historia historia historia";
+      grid-template-areas: "carrusel carrusel carrusel carrusel" "historia historia historia historia";
 }
 
 body main #quienesSomos .carrusel {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
   grid-area: carrusel;
 }
 
@@ -187,6 +221,9 @@ body main #quienesSomos .carrusel .carousel-inner {
 }
 
 body main #quienesSomos .historia {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
   grid-area: historia;
   padding: 10%;
 }
@@ -201,15 +238,15 @@ body main #quienesSomos .historia .card .card-text {
   margin: 0 !important;
 }
 
-body main .servicios {
+body main #servicios {
   padding: 4rem;
 }
 
-body main .servicios .card {
+body main #servicios .card {
   border: #201F1D;
 }
 
-body main .contacto {
+body main #contacto {
   background: url(../Imagenes/bas.png);
   background-size: 100vw 100vh;
   background-attachment: fixed;
@@ -219,45 +256,47 @@ body main .contacto {
   padding-bottom: 100px;
 }
 
-body main .contacto .formulario {
+body main #contacto .formulario {
   width: 480px;
   margin: auto;
   background: rgba(218, 195, 185, 0.4);
   padding: 10px 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 7px;
 }
 
-body main .contacto form {
+body main #contacto form {
   min-height: 50%;
   max-height: 100%;
   max-width: 100%;
 }
 
-body main .contacto form label,
-body main .contacto form select,
-body main .contacto form textarea,
-body main .contacto form input {
+body main #contacto form label,
+body main #contacto form select,
+body main #contacto form textarea,
+body main #contacto form input {
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   color: #201F1D;
   margin-bottom: 10px;
   padding: 4px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: none;
 }
 
-body main .contacto form label textarea,
-body main .contacto form select textarea,
-body main .contacto form textarea textarea,
-body main .contacto form input textarea {
+body main #contacto form label textarea,
+body main #contacto form select textarea,
+body main #contacto form textarea textarea,
+body main #contacto form input textarea {
   min-height: 100px;
   max-height: 200px;
   max-width: 100%;
 }
 
-body main .contacto form #boton {
+body main #contacto form #boton {
   background-color: #201F1D;
   color: #DAC3B9;
   padding: 10px;
@@ -265,14 +304,17 @@ body main .contacto form #boton {
   width: 100%;
 }
 
-body main .contacto form #boton #boton:hover {
+body main #contacto form #boton #boton:hover {
   cursor: pointer;
 }
 
 body footer {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 50% 40% 10%;
-  grid-template-rows: 1.5rem;
+  -ms-grid-columns: 50% 40% 10%;
+      grid-template-columns: 50% 40% 10%;
+  -ms-grid-rows: 1.5rem;
+      grid-template-rows: 1.5rem;
   background-color: #201F1D;
   width: 100vw;
   height: 3rem;

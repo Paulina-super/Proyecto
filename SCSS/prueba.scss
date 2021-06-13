@@ -85,7 +85,7 @@ body {
         }
     }
     main {
-        .home {
+        #index {
             display: flex;
             align-items: center;
             .home__video {
@@ -181,13 +181,13 @@ body {
                 }
             }
         }
-        .servicios {
+        #servicios {
             padding: 4rem;
             .card {
                 border: $color1;
             }
         }
-        .contacto {
+        #contacto {
             background: url(../Imagenes/bas.png);
             background-size: 100vw 100vh;
             background-attachment: fixed;
